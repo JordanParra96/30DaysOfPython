@@ -42,3 +42,13 @@ elif grade >= 60 and grade < 70:
     print('Your grade is D.')
 elif grade >= 0 and grade < 60:
     print('Your grade is F.')
+
+month = input('Enter the month: ').title()
+if month in ['September', 'October', 'November']:
+    print('The season is Autumn.')
+elif month in ['December', 'January', 'February']:
+    print('The season is Winter.')
+elif month in ['March', 'April', 'May']:
+    print('The season is Spring.')
+elif month in ['June', 'July', 'August']:
+    print('The season is Summer.')
