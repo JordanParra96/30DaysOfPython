@@ -28,3 +28,17 @@ elif number_one < number_two:
     print(f'{number_one} is less than {number_two}.')
 else:
     print(f'{number_one} is equal to {number_two}.')
+
+# Level 2
+grade = int(input('Enter your grade: '))
+
+if grade >= 90 and grade <= 100:
+    print('Your grade is A.')
+elif grade >= 80 and grade < 90:
+    print('Your grade is B.')
+elif grade >= 70 and grade < 80:
+    print('Your grade is C.')
+elif grade >= 60 and grade < 70:
+    print('Your grade is D.')
+elif grade >= 0 and grade < 60:
+    print('Your grade is F.')
