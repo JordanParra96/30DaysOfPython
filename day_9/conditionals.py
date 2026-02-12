@@ -52,3 +52,11 @@ elif month in ['March', 'April', 'May']:
     print('The season is Spring.')
 elif month in ['June', 'July', 'August']:
     print('The season is Summer.')
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+input_fruit = input('Enter a fruit: ').lower()
+if input_fruit in fruits:
+    print('That fruit already exists in the list.')
+else:
+    fruits.append(input_fruit)
+    print(fruits)
