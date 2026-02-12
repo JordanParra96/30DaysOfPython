@@ -60,3 +60,36 @@ if input_fruit in fruits:
 else:
     fruits.append(input_fruit)
     print(fruits)
+
+# Level 3
+person = {
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+if 'skills' in person:
+    print('Middle skill:', person['skills'][len(person['skills']) // 2])
+    if 'Python' in person['skills']:
+        print('Python is one of the skills.')
+    else:
+        print('Python is not one of the skills.')
+    if person['skills'] == ['JavaScript', 'React']:
+        print('He is a front end developer.')
+    elif person['skills'] == ['Node', 'Python', 'MongoDB']:
+        print('He is a backend developer.')
+    elif person['skills'] == ['React', 'Node', 'MongoDB']:
+        print('He is a fullstack developer.')
+    else:
+        print('unknown title.')
+
+if person['is_married'] and person['country'] == 'Finland':
+    print(f"{person['first_name']} {person['last_name']} lives in {person['country']}. He is married.")
+
