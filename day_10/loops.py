@@ -14,3 +14,8 @@ countReverse = 10
 while countReverse > -1:
     print('While reverse:', countReverse)
     countReverse -= 1
+
+triangle = '#'
+for i in range(7):
+    print(triangle)
+    triangle += '#'
