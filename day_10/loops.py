@@ -24,3 +24,6 @@ for i in range(8):
     for j in range(8):
         print('#', end=' ')
     print()
+
+for i in range(11):
+    print(f'{i} x {i} = {i * i}')
