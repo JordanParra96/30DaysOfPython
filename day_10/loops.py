@@ -34,4 +34,6 @@ for lan in languages_lst:
 
 for i in range(101):
     if i % 2 == 0:
-        print(i)
+        print(f'Even: {i}')
+    elif i % 2 != 0:
+        print(f'Odd: {i}')
