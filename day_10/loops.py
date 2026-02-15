@@ -31,3 +31,7 @@ for i in range(11):
 languages_lst = ['Python', 'Numpy','Pandas','Django', 'Flask']
 for lan in languages_lst:
     print(lan)
+
+for i in range(101):
+    if i % 2 == 0:
+        print(i)
