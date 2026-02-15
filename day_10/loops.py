@@ -43,3 +43,13 @@ sum = 0
 for i in range(101):
     sum += i
 print(f'Sum of numbers from 0 to 100 is: {sum}')
+
+sumEven = 0
+sumOdd = 0
+for i in range(101):
+    if i % 2 == 0:
+        sumEven += i
+    elif i % 2 != 0:
+        sumOdd += i
+print(f'Sum of even numbers from 0 to 100 is: {sumEven}')
+print(f'Sum of odd numbers from 0 to 100 is: {sumOdd}')
