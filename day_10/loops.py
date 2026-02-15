@@ -255,3 +255,9 @@ countries = [
 for country in countries:
     if 'land' in country:
         print(country)
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+reversedFruits = []
+for fruit in range(len(fruits)):
+    reversedFruits.append(fruits[len(fruits) - 1 - fruit])
+print(reversedFruits)
