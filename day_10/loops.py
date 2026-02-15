@@ -2900,3 +2900,8 @@ sorted_languages = sorted(language_count.items(), key=lambda x: x[1], reverse=Tr
 print('Ten most spoken languages:')
 for i, (language, count) in enumerate(sorted_languages[:10]):
     print(f'{i+1}. {language}: {count}')
+
+sorted_countries = sorted(countries_data, key=lambda x: x['population'], reverse=True)
+print('Ten most populated countries:')
+for i, country in enumerate(sorted_countries[:10]):
+    print(f'{i+1}. {country["name"]}: {country["population"]}')
