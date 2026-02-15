@@ -37,3 +37,9 @@ for i in range(101):
         print(f'Even: {i}')
     elif i % 2 != 0:
         print(f'Odd: {i}')
+
+# Level 2
+sum = 0
+for i in range(101):
+    sum += i
+print(f'Sum of numbers from 0 to 100 is: {sum}')
