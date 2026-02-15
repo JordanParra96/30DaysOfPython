@@ -27,3 +27,7 @@ for i in range(8):
 
 for i in range(11):
     print(f'{i} x {i} = {i * i}')
+
+languages_lst = ['Python', 'Numpy','Pandas','Django', 'Flask']
+for lan in languages_lst:
+    print(lan)
