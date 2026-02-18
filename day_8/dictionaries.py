@@ -1,3 +1,5 @@
+''' Day 8: 30 Days of python programming '''
+
 dog = {}
 dog['name'] = 'Moni'
 dog['color'] = 'brown'

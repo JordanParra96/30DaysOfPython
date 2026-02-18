@@ -1,5 +1,7 @@
-# sets
-it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+''' Day 7: 30 Days of python programming '''
+
+it_companies = {'Facebook', 'Google', 'Microsoft',
+                'Apple', 'IBM', 'Oracle', 'Amazon'}
 A = {19, 22, 24, 20, 25, 26}
 B = {19, 22, 20, 25, 26, 24, 28, 27}
 age = [22, 19, 24, 25, 26, 24, 25, 24]
@@ -27,7 +29,7 @@ del B
 age_set = set(age)
 print('Age set:', age_set)
 
-sentence = "I am a teacher and I love to inspire and teach people"
-words = sentence.split()
+SENTENCE = "I am a teacher and I love to inspire and teach people"
+words = SENTENCE.split()
 unique_words = set(words)
 print('Unique words in the sentence:', unique_words)
