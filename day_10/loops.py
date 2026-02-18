@@ -1,8 +1,8 @@
 ''' Day 10: 30 Days of python programming '''
 
 # Level 1
-from data.countries_data import countries_data
-from data.countries import countries
+from countries_data import countries_data
+from countries import countries
 
 COUNT = 0
 while COUNT < 11:
