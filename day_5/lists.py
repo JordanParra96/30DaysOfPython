@@ -76,7 +76,7 @@ print('Age range:', AGE_RANGE)
 print('Comparing min and max age difference with average age:',
       abs(MIN_AGE - average_age), abs(MAX_AGE - average_age))
 
-countries = [
+COUNTRIES_LIST = [
     'Afghanistan',
     'Albania',
     'Algeria',
@@ -239,44 +239,12 @@ countries = [
     'Slovenia',
     'Solomon Islands',
     'Somalia',
-    'South Africa',
-    'South Sudan',
-    'Spain',
-    'Sri Lanka',
-    'Sudan',
-    'Suriname',
-    'Sweden',
-    'Switzerland',
-    'Syria',
-    'Tajikistan',
-    'Tanzania',
-    'Thailand',
-    'Togo',
-    'Tonga',
-    'Trinidad and Tobago',
-    'Tunisia',
-    'Turkey',
-    'Turkmenistan',
-    'Tuvalu',
-    'Uganda',
-    'Ukraine',
-    'United Arab Emirates',
-    'United Kingdom',
-    'United States',
-    'Uruguay',
-    'Uzbekistan',
-    'Vanuatu',
-    'Vatican City',
-    'Venezuela',
-    'Vietnam',
-    'Yemen',
-    'Zambia',
-    'Zimbabwe'
+    'South Africa'
 ]
-MIDDLE_INDEX = len(countries) // 2
-print('Middle country/countries:', countries[MIDDLE_INDEX])
-first_half = countries[:MIDDLE_INDEX]
-second_half = countries[MIDDLE_INDEX:]
+MIDDLE_INDEX = len(COUNTRIES_LIST) // 2
+print('Middle country/countries:', COUNTRIES_LIST[MIDDLE_INDEX])
+first_half = COUNTRIES_LIST[:MIDDLE_INDEX]
+second_half = COUNTRIES_LIST[MIDDLE_INDEX:]
 print('First half of countries list:', first_half)
 print('Second half of countries list:', second_half)
 
