@@ -4,10 +4,10 @@
 from countries_data import countries_data
 from countries import countries
 
-COUNT_VAR = 0
-while COUNT_VAR < 11:
-    print('while count:', COUNT_VAR)
-    COUNT_VAR += 1
+count_var = 0
+while count_var < 11:
+    print('while count:', count_var)
+    count_var += 1
 
 for i in range(11):
     print('for count:', i)
@@ -15,15 +15,15 @@ for i in range(11):
 for i in range(10, -1, -1):
     print('for reverse:', i)
 
-COUNT_REVERSE = 10
-while COUNT_REVERSE > -1:
-    print('While reverse:', COUNT_REVERSE)
-    COUNT_REVERSE -= 1
+count_reverse = 10
+while count_reverse > -1:
+    print('While reverse:', count_reverse)
+    count_reverse -= 1
 
-TRIANGLE_VAR = '#'
+triangle_var = '#'
 for i in range(7):
-    print(TRIANGLE_VAR)
-    TRIANGLE_VAR += '#'
+    print(triangle_var)
+    triangle_var += '#'
 
 for i in range(8):
     for j in range(8):
