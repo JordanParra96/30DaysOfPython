@@ -1,11 +1,13 @@
-age = 29
-height = 1.72
-comp = 3 + 4j
+''' Day 3: 30 Days of python programming '''
+
+AGE = 29
+HEIGHT = 1.72
+COMP = 3 + 4j
 
 # Area of a triangle
 input_base = float(input('Enter base of the triangle: '))
 input_height = float(input('Enter height of the triangle: '))
-print('Area: ',0.5 * input_base * input_height)
+print('Area: ', 0.5 * input_base * input_height)
 
 # Perimeter of a triangle
 input_side_a = float(input('Enter side a: '))
@@ -22,33 +24,34 @@ print('Perimeter: ', 2 * (input_length + input_width))
 
 # Area of a circle
 input_radius = float(input('Enter radius of the circle: '))
-pi = 3.14
-print('Area: ', pi * input_radius ** 2)
+PI = 3.14
+print('Area: ', PI * input_radius ** 2)
 # Circumference of a circle
-print('Circumference: ', 2 * pi * input_radius)
+print('Circumference: ', 2 * PI * input_radius)
 
 # Calculate the slope, x-intercept and y-intercept of y = 2x -2
-m = 2
-b = -2
+M = 2
+B = -2
 # Slope
-slope_line = m
+SLOPE_LINE = M
 # x-intercept (set y=0)
-x_intercept = -b / m
+X_INTERCEPT = -B / M
 # y-intercept (set x=0)
-y_intercept = b
+Y_INTERCEPT = B
 # Slope between point (2, 2) and (6, 10)
 point_a = (2, 2)
 point_b = (6, 10)
-slope = (point_b[1] - point_a[1]) / (point_b[0] - point_a[0])
-print('Slope of the line:', slope_line)
-print('x-intercept:', x_intercept)
-print('y-intercept:', y_intercept)
-print('Slope between points (2,2) and (6,10):', slope)
+SLOPE = (point_b[1] - point_a[1]) / (point_b[0] - point_a[0])
+print('Slope of the line:', SLOPE_LINE)
+print('x-intercept:', X_INTERCEPT)
+print('y-intercept:', Y_INTERCEPT)
+print('Slope between points (2,2) and (6,10):', SLOPE)
 # Compare the slopes
-print('Are the slopes equal?', slope_line == slope)
+print('Are the slopes equal?', SLOPE_LINE == SLOPE)
 # Euclidean distance between (2, 2) and (6, 10)
-euclidean_distance = ((point_b[0] - point_a[0]) ** 2 + (point_b[1] - point_a[1]) ** 2) ** 0.5
-print('Euclidean distance between (2,2) and (6,10):', euclidean_distance)
+EUCLIDEAN_DISTANCE = ((point_b[0] - point_a[0])
+                      ** 2 + (point_b[1] - point_a[1]) ** 2) ** 0.5
+print('Euclidean distance between (2,2) and (6,10):', EUCLIDEAN_DISTANCE)
 
 # comparison operators
 python_len = print(len('python'))
@@ -56,18 +59,20 @@ dragon_len = print(len('dragon'))
 print('Are the lengths equal?', python_len == dragon_len)
 print('Is "on" in "python"?', 'on' in 'python')
 print('Is "on" in "dragon"?', 'on' in 'dragon')
-print('Is "jargon" in "I hope this course is not full of jargon"?', 'jargon' in 'I hope this course is not full of jargon')
+print('Is "jargon" in "I hope this course is not full of jargon"?',
+      'jargon' in 'I hope this course is not full of jargon')
 print('Is "on" not in "dragon"?', 'on' not in 'dragon')
 print('Is "on" not in "python"?', 'on' not in 'python')
 print('str(float(len("python"))):', str(float(len('python'))))
 
-# Even numbers  
+# Even numbers
 number = int(input('Enter a number: '))
 is_even = number % 2 == 0
 print('Is the number even?', is_even)
 
 print('floor division of 7 // 3 is equal to int 2.7:', 7 // 3 == int(2.7))
-print('type of "10" is equal to type of 10:', type('10') == type(10))
+print('type of "10" is equal to type of 10:',
+      isinstance('10', str) == isinstance(10, int))
 print('int("9.8") is equal to 10:', int(float('9.8')) == 10)
 
 # Calculate weekly earning

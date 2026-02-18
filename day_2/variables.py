@@ -1,52 +1,53 @@
-# Day 2: 30 Days of python programming
-first_name = 'Jordan'
-last_name = 'Parra'
-full_name = first_name + ' ' + last_name
-country = 'Colombia'
-city = 'Mosquera'
-age = 29
-year = 2026
-is_married = False
-is_true = True
-is_light_on = True
+''' Day 2: 30 Days of python programming '''
+
+FIRST_NAME = 'Jordan'
+LAST_NAME = 'Parra'
+FULL_NAME = FIRST_NAME + ' ' + LAST_NAME
+COUNTRY = 'Colombia'
+CITY = 'Mosquera'
+AGE = 29
+YEAR = 2026
+IS_MARRIED = False
+IS_TRUE = True
+IS_LIGHT_ON = True
 one, two, three = 1, 2, 3
 
-print('First Name type:', type(first_name))
-print('Last Name type:', type(last_name))
-print('Full Name type:', type(full_name))
-print('Country type:', type(country))
-print('City type:', type(city))
-print('Age type:', type(age))
-print('Year type:', type(year))
-print('Is Married type:', type(is_married))
-print('Is True type:', type(is_true))
-print('Is Light On type:', type(is_light_on))
+print('First Name type:', type(FIRST_NAME))
+print('Last Name type:', type(LAST_NAME))
+print('Full Name type:', type(FULL_NAME))
+print('COUNTRY type:', type(COUNTRY))
+print('CITY type:', type(CITY))
+print('AGE type:', type(AGE))
+print('YEAR type:', type(YEAR))
+print('Is Married type:', type(IS_MARRIED))
+print('Is True type:', type(IS_TRUE))
+print('Is Light On type:', type(IS_LIGHT_ON))
 print('One type:', type(one))
 print('Two type:', type(two))
 print('Three type:', type(three))
 
-print('First name length:', len(first_name))
-print('Last name length:', len(last_name))
+print('First name length:', len(FIRST_NAME))
+print('Last name length:', len(LAST_NAME))
 
-num_one = 5
-num_two = 4
-total = num_one + num_two
-diff = num_one - num_two
-product = num_one * num_two
-division = num_one / num_two
-remainder = num_one % num_two
-exp = num_one ** num_two
-floor_division = num_one // num_two
+NUM_ONE = 5
+NUM_TWO = 4
+TOTAL = NUM_ONE + NUM_TWO
+DIFF = NUM_ONE - NUM_TWO
+PRODUCT = NUM_ONE * NUM_TWO
+DIVISION = NUM_ONE / NUM_TWO
+REMAINDER = NUM_ONE % NUM_TWO
+EXP = NUM_ONE ** NUM_TWO
+FLOOR_DIVISION = NUM_ONE // NUM_TWO
 
-circle_radius = 30
-area_of_circle = 3.14 * circle_radius ** 2
-circum_of_circle = 2 * 3.14 * circle_radius
+CIRCLE_RADIUS = 30
+AREA_OF_CIRCLE = 3.14 * CIRCLE_RADIUS ** 2
+CIRCUM_OF_CIRCLE = 2 * 3.14 * CIRCLE_RADIUS
 
 input_radius = int(input('Enter radius: '))
-area_of_circle_input = 3.14 * input_radius ** 2
-print('Area of circle with radius', input_radius, 'is:', area_of_circle_input)
+AREA_OF_CIRCLE_input = 3.14 * input_radius ** 2
+print('Area of circle with radius', input_radius, 'is:', AREA_OF_CIRCLE_input)
 
-input_first_name = input('Enter your first name: ')
-input_last_name = input('Enter your last name: ')
-input_country = input('Enter your country: ')
-input_age = input('Enter your age: ')
+input_FIRST_NAME = input('Enter your first name: ')
+input_LAST_NAME = input('Enter your last name: ')
+input_COUNTRY = input('Enter your COUNTRY: ')
+input_AGE = input('Enter your AGE: ')

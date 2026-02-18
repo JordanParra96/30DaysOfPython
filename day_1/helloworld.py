@@ -1,4 +1,4 @@
-# Day 1 - 30DaysOfPython Challenge
+'''Day 1 - 30DaysOfPython Challenge'''
 
 print(3 + 4)             # addition(+)
 print(3 - 4)             # subtraction(-)
@@ -27,7 +27,8 @@ print('String: ', 'Jordan', 'Boolean: ', True)
 print('List: ', ['Asabeneh', 'Python', 'Finland'])
 print('Tuple: ', ('Asabeneh', 'Python', 'Finland'))
 print('Set: ', {'Asabeneh', 'Python', 'Finland'})
-print('Dictionary: ', {'name': 'Jordan', 'country': 'Colombia', 'city': 'Mosquera', 'age': 29})
+print('Dictionary: ', {'name': 'Jordan',
+      'country': 'Colombia', 'city': 'Mosquera', 'age': 29})
 
 # Euclidean distance between (2, 3) and (10, 8)
 print(abs(2-3))

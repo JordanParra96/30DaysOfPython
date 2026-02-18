@@ -1,19 +1,21 @@
-your_age = int(input('Enter your age: '))
-if your_age < 18:
-    years_needed = 18 - your_age
+''' Day 9: 30 Days of python programming '''
+
+YOUR_AGE = int(input('Enter your age: '))
+if YOUR_AGE < 18:
+    years_needed = 18 - YOUR_AGE
     print(f'You need {years_needed} more years to learn to drive.')
 else:
     print('You are old enough to learn to drive.')
 
-my_age = 29
-if my_age > your_age:
-    age_diff = my_age - your_age
+MY_AGE = 29
+if MY_AGE > YOUR_AGE:
+    age_diff = MY_AGE - YOUR_AGE
     if age_diff == 1:
         print(f'I am {age_diff} year older than you.')
     else:
         print(f'I am {age_diff} years older than you.')
-elif my_age < your_age:
-    age_diff = your_age - my_age
+elif MY_AGE < YOUR_AGE:
+    age_diff = YOUR_AGE - MY_AGE
     if age_diff == 1:
         print(f'You are {age_diff} year older than me.')
     else:
@@ -91,5 +93,6 @@ if 'skills' in person:
         print('unknown title.')
 
 if person['is_married'] and person['country'] == 'Finland':
-    print(f"{person['first_name']} {person['last_name']} lives in {person['country']}. He is married.")
-
+    print(
+        f"{person['first_name']} {person['last_name']} "
+        f"lives in {person['country']}. He is married.")

@@ -1,4 +1,6 @@
-empty_tuple = tuple()
+''' Day 6: 30 Days of python programming '''
+
+EMPTY_TUPLE = tuple()
 sisters = ('Zuly', 'Dayana')
 brothers = ('Steven', 'Maxi')
 sisters_brothers = sisters + brothers
@@ -32,7 +34,7 @@ last_three = food_stuff_lt[-3:]
 print('Last three items:', last_three)
 del food_stuff_tp
 
-nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+nordic_countries = ('Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden')
 print(nordic_countries)
 print('Is Estonia in nordic_countries?', 'Estonia' in nordic_countries)
 print('Is Iceland in nordic_countries?', 'Iceland' in nordic_countries)
