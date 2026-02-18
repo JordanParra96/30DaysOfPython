@@ -34,15 +34,15 @@ else:
 # Level 2
 grade = int(input('Enter your grade: '))
 
-if grade >= 90 and grade <= 100:
+if 90 <= grade <= 100:
     print('Your grade is A.')
-elif grade >= 80 and grade < 90:
+elif 80 <= grade < 90:
     print('Your grade is B.')
-elif grade >= 70 and grade < 80:
+elif 70 <= grade < 80:
     print('Your grade is C.')
-elif grade >= 60 and grade < 70:
+elif 60 <= grade < 70:
     print('Your grade is D.')
-elif grade >= 0 and grade < 60:
+elif 0 <= grade < 60:
     print('Your grade is F.')
 
 month = input('Enter the month: ').title()
