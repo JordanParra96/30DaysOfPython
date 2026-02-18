@@ -57,12 +57,15 @@ print('Euclidean distance between (2,2) and (6,10):', EUCLIDEAN_DISTANCE)
 python_len = print(len('python'))
 dragon_len = print(len('dragon'))
 print('Are the lengths equal?', python_len == dragon_len)
-print('Is "on" in "python"?', 'on' in 'python')
-print('Is "on" in "dragon"?', 'on' in 'dragon')
+PYTHON_STRING = 'python'
+print('Is "on" in "python"?', 'on' in PYTHON_STRING)
+DRAGON_STRING = 'dragon'
+print('Is "on" in "dragon"?', 'on' in DRAGON_STRING)
+JARGON_STRING = 'jargon'
 print('Is "jargon" in "I hope this course is not full of jargon"?',
-      'jargon' in 'I hope this course is not full of jargon')
-print('Is "on" not in "dragon"?', 'on' not in 'dragon')
-print('Is "on" not in "python"?', 'on' not in 'python')
+      JARGON_STRING in 'I hope this course is not full of jargon')
+print('Is "on" not in "dragon"?', 'on' not in DRAGON_STRING)
+print('Is "on" not in "python"?', 'on' not in PYTHON_STRING)
 print('str(float(len("python"))):', str(float(len('python'))))
 
 # Even numbers

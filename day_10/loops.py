@@ -1,13 +1,13 @@
 ''' Day 10: 30 Days of python programming '''
 
 # Level 1
-from data.countries_data import countries_data
-from data.countries import countries
+from countries_data import countries_data
+from countries import countries
 
-COUNT = 0
-while COUNT < 11:
-    print('while count:', COUNT)
-    COUNT += 1
+COUNT_VAR = 0
+while COUNT_VAR < 11:
+    print('while count:', COUNT_VAR)
+    COUNT_VAR += 1
 
 for i in range(11):
     print('for count:', i)
@@ -15,15 +15,15 @@ for i in range(11):
 for i in range(10, -1, -1):
     print('for reverse:', i)
 
-COUNTREVERSE = 10
-while COUNTREVERSE > -1:
-    print('While reverse:', COUNTREVERSE)
-    COUNTREVERSE -= 1
+COUNT_REVERSE = 10
+while COUNT_REVERSE > -1:
+    print('While reverse:', COUNT_REVERSE)
+    COUNT_REVERSE -= 1
 
-TRIANGLE = '#'
+TRIANGLE_VAR = '#'
 for i in range(7):
-    print(TRIANGLE)
-    TRIANGLE += '#'
+    print(TRIANGLE_VAR)
+    TRIANGLE_VAR += '#'
 
 for i in range(8):
     for j in range(8):
@@ -66,10 +66,10 @@ for country in countries:
         print(country)
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
-reversedFruits = []
+REVERSED_FRUIT = []
 for fruit in range(len(fruits)):
-    reversedFruits.append(fruits[len(fruits) - 1 - fruit])
-print(reversedFruits)
+    REVERSED_FRUIT.append(fruits[len(fruits) - 1 - fruit])
+print(REVERSED_FRUIT)
 
 languages = set()
 for country in countries_data:

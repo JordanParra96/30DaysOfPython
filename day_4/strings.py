@@ -4,8 +4,8 @@ STRINGS = ["Thirty", "Days", "Of", "Python"]
 JOINED_STRING = " ".join(STRINGS)
 print(JOINED_STRING)
 
-codingForAllStrings = ["Coding", "For", "All"]
-JOINED_COSING_STRING = " ".join(codingForAllStrings)
+CODING__FOR_ALL_STRING = ["Coding", "For", "All"]
+JOINED_COSING_STRING = " ".join(CODING__FOR_ALL_STRING)
 print(JOINED_COSING_STRING)
 
 COMPANY = "Coding For All"
