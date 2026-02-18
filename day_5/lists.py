@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-countries_module = importlib.import_module('day_10.countries')
+countries_module = importlib.import_module('data.countries')
 COUNTRIES_LIST = countries_module.countries
 
 

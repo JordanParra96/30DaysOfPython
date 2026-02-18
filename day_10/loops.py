@@ -1,8 +1,15 @@
 ''' Day 10: 30 Days of python programming '''
 
 # Level 1
-from countries_data import countries_data
-from countries import countries
+import importlib
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+countries_module = importlib.import_module('data.countries')
+countries_data_module = importlib.import_module('data.countries_data')
+countries_data = countries_data_module.countries_data
+countries = countries_module.countries
 
 count_var = 0
 while count_var < 11:
