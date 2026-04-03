@@ -138,3 +138,17 @@ def remove_item(lst, item):
 
 numbers = [2, 3, 7, 9]
 print('Remove item from list:', remove_item(numbers, 3))
+
+
+def sum_of_numbers(*args):
+    """Returns the sum of all the numbers passed as arguments."""
+    total = 0
+    for num in args:
+        if isinstance(num, (int, float)):
+            total += num
+        else:
+            print(f'Warning: {num} is not a number and will be ignored.')
+    return total
+
+
+print('Sum of numbers:', sum_of_numbers(1, 2, 3, 4, 5))
