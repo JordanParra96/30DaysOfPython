@@ -212,3 +212,17 @@ def factorial(n):
 
 
 print('Factorial of 5:', factorial(5))
+
+
+def is_empty(param):
+    """Checks if the given parameter is empty."""
+    if param is None:
+        return True
+    if isinstance(param, (str, list, tuple, dict, set)):
+        return len(param) == 0
+    return False
+
+
+print('Is empty string:', is_empty(''))
+print('Is empty list:', is_empty([]))
+print('Is empty dict:', is_empty({}))
