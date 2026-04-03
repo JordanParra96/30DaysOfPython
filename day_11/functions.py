@@ -57,3 +57,32 @@ def check_season(month):
 
 
 print('Season for April:', check_season('April'))
+
+
+def calculate_slope(x1, y1, x2, y2):
+    """Calculates the slope of a line given two points (x1, y1) and (x2, y2)."""
+    if x2 - x1 == 0:
+        return 'Undefined (vertical line)'
+    return (y2 - y1) / (x2 - x1)
+
+
+print('Slope of line through points (1, 2) and (3, 4):',
+      calculate_slope(1, 2, 3, 4))
+
+
+def solve_quadratic_eqn(a, b, c):
+    """Solves the quadratic equation ax^2 + bx + c = 0 and returns the roots."""
+    discriminant = b**2 - 4*a*c
+    if discriminant < 0:
+        return 'No real roots'
+    if discriminant == 0:
+        root = -b / (2*a)
+        return f'One real root: {root}'
+
+    root1 = (-b + discriminant**0.5) / (2*a)
+    root2 = (-b - discriminant**0.5) / (2*a)
+    return f'Two real roots: {root1} and {root2}'
+
+
+print('Roots of equation 2x^2 + 3x - 2 = 0:',
+      solve_quadratic_eqn(2, 3, -2))
