@@ -152,3 +152,31 @@ def sum_of_numbers(*args):
 
 
 print('Sum of numbers:', sum_of_numbers(1, 2, 3, 4, 5))
+
+
+def sum_of_odds(*args):
+    """Returns the sum of all the odd numbers passed as arguments."""
+    total = 0
+    for num in args:
+        if isinstance(num, (int, float)) and num % 2 != 0:
+            total += num
+        else:
+            print(f'Warning: {num} is not an odd number and will be ignored.')
+    return total
+
+
+print('Sum of odd numbers:', sum_of_odds(1, 2, 3, 4, 5))
+
+
+def sum_of_evens(*args):
+    """Returns the sum of all the even numbers passed as arguments."""
+    total = 0
+    for num in args:
+        if isinstance(num, (int, float)) and num % 2 == 0:
+            total += num
+        else:
+            print(f'Warning: {num} is not an even number and will be ignored.')
+    return total
+
+
+print('Sum of even numbers:', sum_of_evens(1, 2, 3, 4, 5))
