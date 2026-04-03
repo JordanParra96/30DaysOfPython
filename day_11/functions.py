@@ -57,3 +57,14 @@ def check_season(month):
 
 
 print('Season for April:', check_season('April'))
+
+
+def calculate_slope(x1, y1, x2, y2):
+    """Calculates the slope of a line given two points (x1, y1) and (x2, y2)."""
+    if x2 - x1 == 0:
+        return 'Undefined (vertical line)'
+    return (y2 - y1) / (x2 - x1)
+
+
+print('Slope of line through points (1, 2) and (3, 4):',
+      calculate_slope(1, 2, 3, 4))
