@@ -115,3 +115,13 @@ def capitalize_list_items(lst):
 
 print('Capitalize list items:', capitalize_list_items(
     ['apple', 'banana', 'cherry']))
+
+
+def add_item(lst, item):
+    """Adds an item to the list."""
+    lst.append(item)
+    return lst
+
+
+food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print('Add item to list:', add_item(food_stuff, 'Meat'))
