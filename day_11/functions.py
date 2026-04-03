@@ -180,3 +180,20 @@ def sum_of_evens(*args):
 
 
 print('Sum of even numbers:', sum_of_evens(1, 2, 3, 4, 5))
+
+# Level 2
+
+
+def evens_and_odds(n):
+    """Returns the count of even and odd numbers from 0 to n."""
+    evens = 0
+    odds = 0
+    for i in range(n + 1):
+        if i % 2 == 0:
+            evens += 1
+        else:
+            odds += 1
+    return f'Number of evens: {evens}, Number of odds: {odds}'
+
+
+print('Evens and odds from 0 to 100:', evens_and_odds(100))
