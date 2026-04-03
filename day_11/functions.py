@@ -96,3 +96,13 @@ def print_list(lst):
 
 print('Print list items:')
 print_list(['apple', 'banana', 'cherry'])
+
+
+def reverse_list(lst):
+    """Reverses the list and returns it."""
+    for i in range(len(lst) // 2):
+        lst[i], lst[len(lst) - 1 - i] = lst[len(lst) - 1 - i], lst[i]
+    return lst
+
+
+print('Reverse list:', reverse_list([1, 2, 3, 4, 5]))
