@@ -106,3 +106,12 @@ def reverse_list(lst):
 
 
 print('Reverse list:', reverse_list([1, 2, 3, 4, 5]))
+
+
+def capitalize_list_items(lst):
+    """Capitalizes each string item in the list and returns the new list."""
+    return [item.capitalize() for item in lst if isinstance(item, str)]
+
+
+print('Capitalize list items:', capitalize_list_items(
+    ['apple', 'banana', 'cherry']))
