@@ -86,3 +86,13 @@ def solve_quadratic_eqn(a, b, c):
 
 print('Roots of equation 2x^2 + 3x - 2 = 0:',
       solve_quadratic_eqn(2, 3, -2))
+
+
+def print_list(lst):
+    """Prints each item in the list on a new line."""
+    for item in lst:
+        print(item)
+
+
+print('Print list items:')
+print_list(['apple', 'banana', 'cherry'])
