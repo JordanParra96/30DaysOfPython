@@ -197,3 +197,18 @@ def evens_and_odds(n):
 
 
 print('Evens and odds from 0 to 100:', evens_and_odds(100))
+
+
+def factorial(n):
+    """Returns the factorial of a number."""
+    if n < 0:
+        return 'Factorial is not defined for negative numbers.'
+    if n == 0 or n == 1:
+        return 1
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+
+print('Factorial of 5:', factorial(5))
