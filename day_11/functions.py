@@ -125,3 +125,16 @@ def add_item(lst, item):
 
 food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
 print('Add item to list:', add_item(food_stuff, 'Meat'))
+
+
+def remove_item(lst, item):
+    """Removes an item from the list if it exists."""
+    if item in lst:
+        lst.remove(item)
+    else:
+        print(f'Item {item} not found in the list.')
+    return lst
+
+
+numbers = [2, 3, 7, 9]
+print('Remove item from list:', remove_item(numbers, 3))
