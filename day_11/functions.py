@@ -47,14 +47,13 @@ def check_season(month):
     month = month.lower()
     if month in ['december', 'january', 'february']:
         return 'Winter'
-    elif month in ['march', 'april', 'may']:
+    if month in ['march', 'april', 'may']:
         return 'Spring'
-    elif month in ['june', 'july', 'august']:
+    if month in ['june', 'july', 'august']:
         return 'Summer'
-    elif month in ['september', 'october', 'november']:
-        return 'Autumn'
-    else:
-        return 'Invalid month'
+    if month in ['september', 'october', 'november']:
+        return 'Fall'
+    return None
 
 
 print('Season for April:', check_season('April'))
