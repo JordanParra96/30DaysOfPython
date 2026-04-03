@@ -226,3 +226,89 @@ def is_empty(param):
 print('Is empty string:', is_empty(''))
 print('Is empty list:', is_empty([]))
 print('Is empty dict:', is_empty({}))
+
+
+def calculate_mean(*args):
+    """Returns the mean of the numbers passed as arguments."""
+    total = 0
+    count = 0
+    for num in args:
+        if isinstance(num, (int, float)):
+            total += num
+            count += 1
+        else:
+            print(f'Warning: {num} is not a number and will be ignored.')
+    return total / count if count > 0 else 'No valid numbers provided.'
+
+
+print('Mean of numbers:', calculate_mean(1, 2, 3, 4, 5))
+
+
+def calculate_median(*args):
+    """Returns the median of the numbers passed as arguments."""
+    for num in args:
+        if not isinstance(num, (int, float)):
+            print(f'Warning: {num} is not a number and will be ignored.')
+        numbers.sort()
+        n = len(numbers)
+        mid = n // 2
+
+    if n % 2 == 0:
+        return (numbers[mid - 1] + numbers[mid]) / 2
+    return numbers[mid]
+
+
+print('Median of numbers:', calculate_median(1, 2, 3, 4, 5))
+
+
+def calculate_mode(*args):
+    """Returns the mode of the numbers passed as arguments."""
+    frequency = {}
+    for num in args:
+        if isinstance(num, (int, float)):
+            frequency[num] = frequency.get(num, 0) + 1
+        else:
+            print(f'Warning: {num} is not a number and will be ignored.')
+
+    mode = max(frequency, key=frequency.get)
+    return mode
+
+
+print('Mode of numbers:', calculate_mode(1, 2, 2, 3, 4, 5))
+
+
+def calculate_range(*args):
+    """Returns the range of the numbers passed as arguments."""
+    for num in args:
+        if not isinstance(num, (int, float)):
+            print(f'Warning: {num} is not a number and will be ignored.')
+
+    return max(numbers) - min(numbers)
+
+
+print('Range of numbers:', calculate_range(1, 2, 3, 4, 5))
+
+
+def calculate_variance(*args):
+    """Returns the variance of the numbers passed as arguments."""
+    for num in args:
+        if not isinstance(num, (int, float)):
+            print(f'Warning: {num} is not a number and will be ignored.')
+
+    mean = calculate_mean(*numbers)
+    variance = sum((num - mean) ** 2 for num in numbers) / len(numbers)
+    return variance
+
+
+print('Variance of numbers:', calculate_variance(1, 2, 3, 4, 5))
+
+
+def calculate_std(*args):
+    """Returns the standard deviation of the numbers passed as arguments."""
+    variance = calculate_variance(*args)
+    if isinstance(variance, str):
+        return variance
+    return variance ** 0.5
+
+
+print('Standard deviation of numbers:', calculate_std(1, 2, 3, 4, 5))
