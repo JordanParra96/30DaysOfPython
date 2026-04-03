@@ -40,3 +40,20 @@ def convert_celsius_to_fahrenheit(celsius):
 
 
 print('Convert 25°C to Fahrenheit:', convert_celsius_to_fahrenheit(25))
+
+
+def check_season(month):
+    """Determines the season based on the month."""
+    month = month.lower()
+    if month in ['december', 'january', 'february']:
+        return 'Winter'
+    if month in ['march', 'april', 'may']:
+        return 'Spring'
+    if month in ['june', 'july', 'august']:
+        return 'Summer'
+    if month in ['september', 'october', 'november']:
+        return 'Fall'
+    return None
+
+
+print('Season for April:', check_season('April'))
