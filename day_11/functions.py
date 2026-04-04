@@ -349,3 +349,12 @@ def is_prime(n):
 
 print('Is 7 prime:', is_prime(7))
 print('Is 10 prime:', is_prime(10))
+
+
+def is_unique(lst):
+    """Checks if all items in the list are unique."""
+    return len(lst) == len(set(lst))
+
+
+print('Is unique [1, 2, 3, 4]:', is_unique([1, 2, 3, 4]))
+print('Is unique [1, 2, 2, 4]:', is_unique([1, 2, 2, 4]))
