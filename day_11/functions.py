@@ -411,3 +411,13 @@ def most_spoken_languages(con):
 
 
 print('Most spoken languages:', most_spoken_languages(countries_data))
+
+
+def most_populated_countries(con):
+    """Returns the 10 most populated countries from the data/contries_data.py file."""
+    sorted_countries = sorted(
+        con, key=lambda x: x['population'], reverse=True)
+    return sorted_countries[:10]
+
+
+print('Most populated countries:', most_populated_countries(countries_data))
