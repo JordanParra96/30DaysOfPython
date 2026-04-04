@@ -370,3 +370,20 @@ def is_same_type(*args):
 
 print('Is same type (1, 2, 3):', is_same_type(1, 2, 3))
 print('Is same type (1, "2", 3):', is_same_type(1, "2", 3))
+
+
+def is_valid_variable(name):
+    """Checks if the given name is a valid variable name in Python."""
+    if not name.isidentifier():
+        return False
+    if name in {'False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class',
+                'continue', 'def', 'del', 'elif', 'else', 'except', 'finally',
+                'for', 'from', 'global', 'if', 'import', 'in', 'is',
+                'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',
+                'return', 'try', 'while', 'with', 'yield'}:
+        return False
+    return True
+
+
+print('Is valid variable "my_var":', is_valid_variable("my_var"))
+print('Is valid variable "2var":', is_valid_variable("2var"))
