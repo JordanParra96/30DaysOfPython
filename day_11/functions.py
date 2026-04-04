@@ -3,6 +3,17 @@
 # Level 1
 
 
+import importlib
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+countries_module = importlib.import_module('data.countries')
+countries_data_module = importlib.import_module('data.countries_data')
+countries_data = countries_data_module.countries_data
+countries = countries_module.countries
+
+
 def add_two_numbers(num1, num2):
     """Adds two numbers and returns the result."""
     return num1 + num2
@@ -387,3 +398,17 @@ def is_valid_variable(name):
 
 print('Is valid variable "my_var":', is_valid_variable("my_var"))
 print('Is valid variable "2var":', is_valid_variable("2var"))
+
+
+def most_spoken_languages(con):
+    """Returns the 10 most spoken languages from the data/contries_data.py file."""
+    language_count = {}
+    for country in con:
+        for language in country['languages']:
+            language_count[language] = language_count.get(language, 0) + 1
+    sorted_languages = sorted(
+        language_count.items(), key=lambda x: x[1], reverse=True)
+    return sorted_languages[:10]
+
+
+print('Most spoken languages:', most_spoken_languages(countries_data))
