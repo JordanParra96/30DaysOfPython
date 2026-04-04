@@ -312,3 +312,24 @@ def calculate_std(*args):
 
 
 print('Standard deviation of numbers:', calculate_std(1, 2, 3, 4, 5))
+
+
+def greet(name='Guest'):
+    """Greets the person with the given name."""
+    return f'Hello, {name}!'
+
+
+print('Greet with name:', greet('Alice'))
+print('Greet without name:', greet())
+
+
+def show_args(**args):
+    """Prints the keyword arguments passed to the function."""
+    for key, value in args.items():
+        print(f'{key}: {value}')
+
+
+print('Show keyword arguments:')
+show_args(name='Alice', age=30, city='New York')
+print('Show keyword another arguments:')
+show_args(name="Bob", pet="Fluffy, the bunny")
