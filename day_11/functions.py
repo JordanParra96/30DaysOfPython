@@ -358,3 +358,15 @@ def is_unique(lst):
 
 print('Is unique [1, 2, 3, 4]:', is_unique([1, 2, 3, 4]))
 print('Is unique [1, 2, 2, 4]:', is_unique([1, 2, 2, 4]))
+
+
+def is_same_type(*args):
+    """Checks if all arguments are of the same type."""
+    if not args:
+        return True
+    first_type = type(args[0])
+    return all(isinstance(arg, first_type) for arg in args)
+
+
+print('Is same type (1, 2, 3):', is_same_type(1, 2, 3))
+print('Is same type (1, "2", 3):', is_same_type(1, "2", 3))
