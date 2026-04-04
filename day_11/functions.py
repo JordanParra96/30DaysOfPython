@@ -11,7 +11,6 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 countries_module = importlib.import_module('data.countries')
 countries_data_module = importlib.import_module('data.countries_data')
 countries_data = countries_data_module.countries_data
-countries = countries_module.countries
 
 
 def add_two_numbers(num1, num2):
