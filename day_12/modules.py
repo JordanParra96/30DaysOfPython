@@ -44,3 +44,16 @@ def rgb_color_gen():
 
 
 print("RGB Color:", rgb_color_gen())
+
+
+# Level 2
+def list_of_hexa_colors(num_colors):
+    """Generate a list of hexadecimal colors."""
+    hex_colors = []
+    for _ in range(num_colors):
+        color = f"#{random.randint(0, 0xFFFFFF):06x}"
+        hex_colors.append(color)
+    return hex_colors
+
+
+print("Hexadecimal Colors:", list_of_hexa_colors(5))
