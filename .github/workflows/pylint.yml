@@ -21,7 +21,7 @@ jobs:
 
             if (branchName.startsWith('enh_')) {
               labelToAdd = 'enhancement';
-            } else if (branchName.startsWith('day_')) {
+            } else if (branchName.startsWith('day')) {
               labelToAdd = 'exercises';
             }
 
