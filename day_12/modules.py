@@ -71,3 +71,16 @@ def list_of_rgb_colors(num_colors):
 
 
 print("RGB Colors:", list_of_rgb_colors(5))
+
+
+def generate_colors(color_type, num_colors):
+    """Generate a list of colors based on the specified type (hexa or rgb)."""
+    if color_type == "hexa":
+        return list_of_hexa_colors(num_colors)
+    if color_type == "rgb":
+        return list_of_rgb_colors(num_colors)
+    raise ValueError("Invalid color type. Use 'hexa' or 'rgb'.")
+
+
+print("Generated Colors:", generate_colors("hexa", 5))
+print("Generated Colors:", generate_colors("rgb", 5))
