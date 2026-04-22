@@ -33,3 +33,14 @@ def user_id_gen_by_user():
 
 
 print("User IDs:", user_id_gen_by_user())
+
+
+def rgb_color_gen():
+    """Generate a random RGB color."""
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return f"rgb({r}, {g}, {b})"
+
+
+print("RGB Color:", rgb_color_gen())
