@@ -94,3 +94,12 @@ def shuffle_list(items):
 
 
 print("Shuffled List:", shuffle_list([1, 2, 3, 4, 5]))
+
+
+def unique_random_numbers():
+    """Generate an array of seven unique random numbers in the range of 0-9."""
+    numbers = random.sample(range(10), 7)
+    return numbers
+
+
+print("Unique Random Numbers:", unique_random_numbers())
