@@ -57,3 +57,17 @@ def list_of_hexa_colors(num_colors):
 
 
 print("Hexadecimal Colors:", list_of_hexa_colors(5))
+
+
+def list_of_rgb_colors(num_colors):
+    """Generate a list of RGB colors."""
+    rgb_colors = []
+    for _ in range(num_colors):
+        r = random.randint(0, 255)
+        g = random.randint(0, 255)
+        b = random.randint(0, 255)
+        rgb_colors.append(f"rgb({r}, {g}, {b})")
+    return rgb_colors
+
+
+print("RGB Colors:", list_of_rgb_colors(5))
