@@ -84,3 +84,13 @@ def generate_colors(color_type, num_colors):
 
 print("Generated Colors:", generate_colors("hexa", 5))
 print("Generated Colors:", generate_colors("rgb", 5))
+
+
+# Level 3
+def shuffle_list(items):
+    """Shuffle a list of items."""
+    random.shuffle(items)
+    return items
+
+
+print("Shuffled List:", shuffle_list([1, 2, 3, 4, 5]))
