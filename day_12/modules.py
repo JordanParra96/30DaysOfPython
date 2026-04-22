@@ -18,3 +18,18 @@ def random_user_id():
 
 
 print(random_user_id())
+
+
+def user_id_gen_by_user():
+    """Generate a user ID by asking user for the number of characters and the number of IDs."""
+    num_characters = int(input("Enter the number of characters for the user ID: "))
+    num_ids = int(input("Enter the number of user IDs to generate: "))
+    characters = string.ascii_letters + string.digits
+    user_ids = []
+    for _ in range(num_ids):
+        user_id = "".join(random.choice(characters) for _ in range(num_characters))
+        user_ids.append(user_id)
+    return user_ids
+
+
+print("User IDs:", user_id_gen_by_user())
