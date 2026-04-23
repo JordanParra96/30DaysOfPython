@@ -25,3 +25,12 @@ list_of_dictioanries = [
     for country in countries
 ]
 print("List of dictionaries:", list_of_dictioanries)
+
+names = [
+    [("Asabeneh", "Yetayeh")],
+    [("David", "Smith")],
+    [("Donald", "Trump")],
+    [("Bill", "Gates")],
+]
+formatted_names = [name[0][0] + " " + name[0][1] for name in names]
+print("Formatted names:", formatted_names)
