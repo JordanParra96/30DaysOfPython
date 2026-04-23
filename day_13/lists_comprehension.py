@@ -8,3 +8,6 @@ print("Negative numbers:", negative_numbers)
 list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened_list = [num for sublist in list_of_lists for num in sublist]
 print("Flattened list:", flattened_list)
+
+list_of_tuples = [(num, 1, num, num**2, num**3, num**4, num**5) for num in range(11)]
+print("List of tuples:", list_of_tuples)
