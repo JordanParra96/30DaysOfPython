@@ -34,3 +34,7 @@ names = [
 ]
 formatted_names = [name[0][0] + " " + name[0][1] for name in names]
 print("Formatted names:", formatted_names)
+
+
+print("Slope:", lambda x1, y1, x2, y2: (y2 - y1) / (x2 - x1))
+print("Y-intercept:", lambda x, y, slope: y - slope * x)
