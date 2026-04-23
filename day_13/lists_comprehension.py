@@ -19,3 +19,9 @@ formatted_countries = [
     for country in countries
 ]
 print("Formatted countries:", formatted_countries)
+
+list_of_dictioanries = [
+    {"country": country[0][0].upper(), "city": country[0][1].upper()}
+    for country in countries
+]
+print("List of dictionaries:", list_of_dictioanries)
