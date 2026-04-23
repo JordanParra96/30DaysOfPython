@@ -11,3 +11,11 @@ print("Flattened list:", flattened_list)
 
 list_of_tuples = [(num, 1, num, num**2, num**3, num**4, num**5) for num in range(11)]
 print("List of tuples:", list_of_tuples)
+
+countries = [[("Finland", "Helsinki")], [("Sweden", "Stockholm")], [("Norway", "Oslo")]]
+
+formatted_countries = [
+    [(country[0][0].upper(), country[0][0][:3].upper(), country[0][1].upper())]
+    for country in countries
+]
+print("Formatted countries:", formatted_countries)
