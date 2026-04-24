@@ -126,3 +126,13 @@ string_list = get_string_lists(mixed_list)
 print("String items from the mixed list: ", string_list)
 
 print("Sum of numbers: ", reduce(lambda x, y: x + y, numbers))
+
+concatenated_countries = (
+    reduce(
+        lambda x, y: f"{x}, {y}" if y != "Iceland" else f"{x} and {y}",
+        countries,
+    )
+    + " are north European countries."
+)
+
+print(concatenated_countries)
