@@ -177,3 +177,11 @@ def get_first_ten_countries(lst_countries):
 
 
 print("First ten countries: ", get_first_ten_countries(countries_list))
+
+
+def get_last_ten_countries(lst_countries):
+    """Returns the last ten countries in the list."""
+    return lst_countries[-10:]
+
+
+print("Last ten countries: ", get_last_ten_countries(countries_list))
