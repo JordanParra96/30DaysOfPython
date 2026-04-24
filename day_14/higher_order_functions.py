@@ -1,6 +1,16 @@
 """Day 14: 30 Days of python programming"""
 
+import importlib
+import sys
+from pathlib import Path
 from functools import reduce
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+countries_module = importlib.import_module("data.countries")
+countries_data_module = importlib.import_module("data.countries_data")
+countries_data = countries_data_module.countries_data
+countries_list = countries_module.countries
 
 # level 1
 countries = ["Estonia", "Finland", "Sweden", "Denmark", "Norway", "Iceland"]
@@ -159,3 +169,19 @@ def countries_by_starting_letter(lst_countries):
 
 
 print("Countries by starting letter: ", countries_by_starting_letter(countries))
+
+
+def get_first_ten_countries(lst_countries):
+    """Returns the first ten countries in the list."""
+    return lst_countries[:10]
+
+
+print("First ten countries: ", get_first_ten_countries(countries_list))
+
+
+def get_last_ten_countries(lst_countries):
+    """Returns the last ten countries in the list."""
+    return lst_countries[-10:]
+
+
+print("Last ten countries: ", get_last_ten_countries(countries_list))
