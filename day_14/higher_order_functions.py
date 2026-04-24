@@ -48,3 +48,30 @@ def add_one():
 
 add_one_func = add_one()
 print("Closure example:", add_one_func(5))
+
+
+def square(x):
+    """This function returns the square of a number."""
+    return x**2
+
+
+squared_numbers = list(map(square, numbers))
+print("Squared numbers using defined function:", squared_numbers)
+
+
+def is_even_func(x):
+    """This function checks if a number is even."""
+    return x % 2 == 0
+
+
+is_even = list(filter(is_even_func, numbers))
+print("Even numbers using defined function:", is_even)
+
+
+def add(x, y):
+    """This function adds two numbers."""
+    return x + y
+
+
+total = reduce(add, numbers)
+print("Sum of numbers using defined function:", total)
