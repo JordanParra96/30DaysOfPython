@@ -114,3 +114,13 @@ total = reduce(
     filter(lambda x: x % 2 == 0, map(lambda x: x**2, numbers)),
 )
 print("Total of squared even numbers: ", total)
+
+
+def get_string_lists(list_param):
+    """Takes a list as a parameter and returns a list of string items."""
+    return list(filter(lambda x: isinstance(x, str), list_param))
+
+
+mixed_list = [1, "hello", 3.14, "world", True, "python"]
+string_list = get_string_lists(mixed_list)
+print("String items from the mixed list: ", string_list)
