@@ -98,3 +98,8 @@ print(
     "countries that have six character: ",
     list(filter(lambda x: len(x) == 6, countries)),
 )
+
+print(
+    "Countries that contain six letters and more: ",
+    list(filter(lambda x: len(x) >= 6, countries)),
+)
