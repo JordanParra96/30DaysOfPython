@@ -185,3 +185,46 @@ def get_last_ten_countries(lst_countries):
 
 
 print("Last ten countries: ", get_last_ten_countries(countries_list))
+
+# level 3
+
+sorted_by_name = sorted(countries_data, key=lambda x: x["name"])
+print("Countries sorted by name: ", sorted_by_name)
+
+sorted_by_capital = sorted(countries_data, key=lambda x: x["capital"])
+print("Countries sorted by capital: ", sorted_by_capital)
+
+sorted_by_population = sorted(
+    countries_data, key=lambda x: x["population"], reverse=True
+)
+print("Countries sorted by population: ", sorted_by_population)
+
+
+def ten_most_spoken_languages(lst_countries_data):
+    """Returns the ten most spoken languages in the world."""
+    language_count = {}
+    for country_data in lst_countries_data:
+        for language in country_data["languages"]:
+            language_count[language] = language_count.get(language, 0) + 1
+    sorted_languages = sorted(language_count.items(), key=lambda x: x[1], reverse=True)
+    return sorted_languages[:10]
+
+
+print(
+    "Ten most spoken languages: ",
+    ten_most_spoken_languages(countries_data),
+)
+
+
+def ten_most_populated_countries(lst_countries_data):
+    """Returns the ten most populated countries in the world."""
+    sorted_countries = sorted(
+        lst_countries_data, key=lambda x: x["population"], reverse=True
+    )
+    return sorted_countries[:10]
+
+
+print(
+    "Ten most populated countries: ",
+    ten_most_populated_countries(countries_data),
+)
