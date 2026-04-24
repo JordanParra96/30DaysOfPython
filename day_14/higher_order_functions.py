@@ -75,3 +75,6 @@ def add(x, y):
 
 total = reduce(add, numbers)
 print("Sum of numbers using defined function:", total)
+
+for country in countries:
+    print(f"{country}")
