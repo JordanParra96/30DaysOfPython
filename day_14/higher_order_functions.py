@@ -78,3 +78,6 @@ print("Sum of numbers using defined function:", total)
 
 for country in countries:
     print(f"{country}")
+
+for name in names:
+    print(f"{name}")
