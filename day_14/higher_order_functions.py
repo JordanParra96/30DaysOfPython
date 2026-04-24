@@ -136,3 +136,11 @@ concatenated_countries = (
 )
 
 print(concatenated_countries)
+
+
+def categorize_countries(lst_countries):
+    """Categorizes countries contains 'ia'."""
+    return list(filter(lambda x: "ia" in x, lst_countries))
+
+
+print("Countries that contain 'ia': ", categorize_countries(countries))
