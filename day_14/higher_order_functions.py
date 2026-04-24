@@ -144,3 +144,18 @@ def categorize_countries(lst_countries):
 
 
 print("Countries that contain 'ia': ", categorize_countries(countries))
+
+
+def countries_by_starting_letter(lst_countries):
+    """Dictionary of countries by starting letter."""
+    return reduce(
+        lambda acc, country: {
+            **acc,
+            country[0]: acc.get(country[0], 0) + 1,
+        },
+        lst_countries,
+        {},
+    )
+
+
+print("Countries by starting letter: ", countries_by_starting_letter(countries))
