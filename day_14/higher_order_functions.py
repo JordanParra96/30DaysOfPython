@@ -108,3 +108,9 @@ print(
     "Countries that start with 'E': ",
     list(filter(lambda x: x.startswith("E"), countries)),
 )
+
+total = reduce(
+    lambda x, y: x + y,
+    filter(lambda x: x % 2 == 0, map(lambda x: x**2, numbers)),
+)
+print("Total of squared even numbers: ", total)
