@@ -81,3 +81,6 @@ for country in countries:
 
 for name in names:
     print(f"{name}")
+
+for number in numbers:
+    print(f"{number}")
