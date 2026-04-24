@@ -91,3 +91,20 @@ print("Countries in uppercase: ", list(map(lambda x: x.upper(), countries)))
 print("Squared numbers: ", list(map(lambda x: x**2, numbers)))
 
 print("Names in uppercase: ", list(map(lambda x: x.upper(), names)))
+
+print("countries that contain 'land': ", list(filter(lambda x: "land" in x, countries)))
+
+print(
+    "countries that have six character: ",
+    list(filter(lambda x: len(x) == 6, countries)),
+)
+
+print(
+    "Countries that contain six letters and more: ",
+    list(filter(lambda x: len(x) >= 6, countries)),
+)
+
+print(
+    "Countries that start with 'E': ",
+    list(filter(lambda x: x.startswith("E"), countries)),
+)
