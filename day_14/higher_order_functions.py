@@ -84,3 +84,6 @@ for name in names:
 
 for number in numbers:
     print(f"{number}")
+
+# level 2
+print("Countries in uppercase: ", list(map(lambda x: x.upper(), countries)))
