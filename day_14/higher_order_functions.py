@@ -87,3 +87,5 @@ for number in numbers:
 
 # level 2
 print("Countries in uppercase: ", list(map(lambda x: x.upper(), countries)))
+
+print("Squared numbers: ", list(map(lambda x: x**2, numbers)))
