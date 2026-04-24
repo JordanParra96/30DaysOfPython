@@ -103,3 +103,8 @@ print(
     "Countries that contain six letters and more: ",
     list(filter(lambda x: len(x) >= 6, countries)),
 )
+
+print(
+    "Countries that start with 'E': ",
+    list(filter(lambda x: x.startswith("E"), countries)),
+)
