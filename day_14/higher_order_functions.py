@@ -124,3 +124,5 @@ def get_string_lists(list_param):
 mixed_list = [1, "hello", 3.14, "world", True, "python"]
 string_list = get_string_lists(mixed_list)
 print("String items from the mixed list: ", string_list)
+
+print("Sum of numbers: ", reduce(lambda x, y: x + y, numbers))
