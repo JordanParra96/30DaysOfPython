@@ -16,3 +16,35 @@ print("Even numbers:", is_even)
 
 total = reduce(lambda x, y: x + y, numbers)
 print("Sum of numbers:", total)
+
+
+def uppercase_decorator(func):
+    """decorator function to convert the result of a function to uppercase"""
+
+    def wrapper():
+        result = func()
+        return result.upper()
+
+    return wrapper
+
+
+@uppercase_decorator
+def greet():
+    """This function returns a greeting message."""
+    return "Hello, World!"
+
+
+print("Decorator example:", greet())
+
+
+def add_one():
+    """This function adds 1 to a number."""
+
+    def inner(a):
+        return a + 1
+
+    return inner
+
+
+add_one_func = add_one()
+print("Closure example:", add_one_func(5))
