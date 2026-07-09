@@ -29,3 +29,8 @@ print(f"Current date and time: {CURRENT_DATE_TIME}")
 TIME_STRING = "5 December, 2019"
 date_object = datetime.strptime(TIME_STRING, "%d %B, %Y")
 print(f"Date object: {date_object}")
+
+# Exercise 4: Calculate the difference between now and new year
+NEW_YEAR = datetime(2027, 1, 1)
+TIME_DIFFERENCE = NEW_YEAR - datetime.now()
+print(f"Time difference between now and New Year: {TIME_DIFFERENCE}")
