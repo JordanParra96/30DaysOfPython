@@ -34,3 +34,10 @@ print(f"Date object: {date_object}")
 NEW_YEAR = datetime(2027, 1, 1)
 TIME_DIFFERENCE = NEW_YEAR - datetime.now()
 print(f"Time difference between now and New Year: {TIME_DIFFERENCE}")
+
+# Exercise 5: Calculate the difference between 1 January 1970 and now
+FIRST_DATE = datetime(1970, 1, 1)
+TIME_DIFFERENCE_SINCE_FIRST_DATE = datetime.now() - FIRST_DATE
+print(
+    f"Time difference between 1 January 1970 and now: {TIME_DIFFERENCE_SINCE_FIRST_DATE}"
+)
