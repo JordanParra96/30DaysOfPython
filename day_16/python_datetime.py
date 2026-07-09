@@ -24,3 +24,8 @@ print(f"Current timestamp: {CURRENT_TIMESTAMP}")
 # Exercise 2: Format the current date and time
 CURRENT_DATE_TIME = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
 print(f"Current date and time: {CURRENT_DATE_TIME}")
+
+# Exercise 3: Change time string to time
+TIME_STRING = "5 December, 2019"
+date_object = datetime.strptime(TIME_STRING, "%d %B, %Y")
+print(f"Date object: {date_object}")
