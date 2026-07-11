@@ -122,3 +122,10 @@ for f, v in zip(fruits, vegetables):
     fruits_and_veges.append({"fruit": f, "veg": v})
 
 print(fruits_and_veges)
+
+# Exercise day 17
+names = ["Finland", "Sweden", "Norway", "Denmark", "Iceland", "Estonia", "Russia"]
+*nordic_countries, es, ru = names
+print(nordic_countries)
+print(es)
+print(ru)
