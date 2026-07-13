@@ -63,7 +63,8 @@ print(re.split("\n", SPLIT_TXT))  # splitting using \n - end of line symbol
 regex_pattern = r"apple"
 PATTERN_TXT = (
     "Apple and banana are fruits."
-    "An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. "
+    "An old cliche says an apple a day a doctor way has been replaced"
+    "by a banana a day keeps the doctor far far away. "
 )
 matches = re.findall(regex_pattern, PATTERN_TXT)
 print(matches)  # ['apple']
