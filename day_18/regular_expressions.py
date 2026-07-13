@@ -58,3 +58,19 @@ There is nothing as rewarding as educating and empowering people.
 I found teaching more interesting than any other jobs.
 Does this motivate you to be a teacher?"""
 print(re.split("\n", SPLIT_TXT))  # splitting using \n - end of line symbol
+
+# Regex pattern example
+regex_pattern = r"apple"
+PATTERN_TXT = (
+    "Apple and banana are fruits."
+    "An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. "
+)
+matches = re.findall(regex_pattern, PATTERN_TXT)
+print(matches)  # ['apple']
+# To make case insensitive adding flag '
+matches = re.findall(regex_pattern, PATTERN_TXT, re.I)
+print(matches)  # ['Apple', 'apple']
+# or we can use a set of characters method
+regex_pattern = r"[Aa]pple"  # this mean the first letter could be Apple or apple
+matches = re.findall(regex_pattern, PATTERN_TXT)
+print(matches)  # ['Apple', 'apple']
