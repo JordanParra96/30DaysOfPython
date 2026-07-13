@@ -95,3 +95,9 @@ ESCAPE_TXT = (
 )
 ESCAPE_MATCHES = re.findall(ESCAPE_PATTERN, ESCAPE_TXT)
 print(ESCAPE_MATCHES)  # ['6', '2019', '8', '2021'] - now, this is better!
+
+# Period example
+PERIOD_PATTERN = r"[a].+"  # . any character, + any character one or more times
+PERIOD_TXT = """Apple and banana are fruits"""
+PERIOD_MATCHES = re.findall(PERIOD_PATTERN, PERIOD_TXT)
+print(PERIOD_MATCHES)  # ['and banana are fruits']
