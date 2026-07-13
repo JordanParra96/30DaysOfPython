@@ -84,3 +84,14 @@ BRACKETS_TXT = (
 )
 matches = re.findall(regex_pattern, BRACKETS_TXT)
 print(matches)  # ['Apple', 'banana', 'apple', 'banana']
+
+# Escape character example
+ESCAPE_PATTERN = (
+    r"\d+"  # d is a special character which means digits, + mean one or more times
+)
+ESCAPE_TXT = (
+    "This regular expression example was made on December 6,"
+    "  2019 and revised on July 8, 2021"
+)
+ESCAPE_MATCHES = re.findall(ESCAPE_PATTERN, ESCAPE_TXT)
+print(ESCAPE_MATCHES)  # ['6', '2019', '8', '2021'] - now, this is better!
