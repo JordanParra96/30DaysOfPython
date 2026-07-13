@@ -31,3 +31,23 @@ start, end = SEARCH_SPAN
 print(start, end)  # 100 105
 SEARCH_SUBSTRING = SEARCH_TXT[start:end]
 print(SEARCH_SUBSTRING)  # first
+
+# Findall example
+FINDALL_MATCHES = re.findall("language", SEARCH_TXT, re.I)
+print(FINDALL_MATCHES)  # ['language', 'language']
+
+# Replace example
+match_replaced = re.sub("Python|python", "JavaScript", SEARCH_TXT, re.I)
+print(match_replaced)
+# OR
+match_replaced = re.sub("[Pp]ython", "JavaScript", SEARCH_TXT, re.I)
+print(match_replaced)
+
+
+SUB_TEXT = """%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing.
+T%he%re i%s n%o%th%ing as r%ewarding a%s e%duc%at%i%ng a%n%d e%m%p%ow%er%ing p%e%o%ple.
+I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs.
+D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher?"""
+
+SUB_RESULT = re.sub("%", "", SUB_TEXT)
+print(SUB_RESULT)
