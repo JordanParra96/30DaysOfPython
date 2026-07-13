@@ -51,3 +51,10 @@ D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher?"""
 
 SUB_RESULT = re.sub("%", "", SUB_TEXT)
 print(SUB_RESULT)
+
+# Split example
+SPLIT_TXT = """I am teacher and  I love teaching.
+There is nothing as rewarding as educating and empowering people.
+I found teaching more interesting than any other jobs.
+Does this motivate you to be a teacher?"""
+print(re.split("\n", SPLIT_TXT))  # splitting using \n - end of line symbol
