@@ -75,3 +75,12 @@ print(matches)  # ['Apple', 'apple']
 regex_pattern = r"[Aa]pple"  # this mean the first letter could be Apple or apple
 matches = re.findall(regex_pattern, PATTERN_TXT)
 print(matches)  # ['Apple', 'apple']
+
+# Square brackets example
+regex_pattern = r"[Aa]pple|[Bb]anana"  # this square bracket means either A or a
+BRACKETS_TXT = (
+    "Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced "
+    "by a banana a day keeps the doctor far far away."
+)
+matches = re.findall(regex_pattern, BRACKETS_TXT)
+print(matches)  # ['Apple', 'banana', 'apple', 'banana']
