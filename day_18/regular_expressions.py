@@ -101,3 +101,9 @@ PERIOD_PATTERN = r"[a].+"  # . any character, + any character one or more times
 PERIOD_TXT = """Apple and banana are fruits"""
 PERIOD_MATCHES = re.findall(PERIOD_PATTERN, PERIOD_TXT)
 print(PERIOD_MATCHES)  # ['and banana are fruits']
+
+# Zero or more times example
+ZERO_OR_MORE_PATTERN = r"[a].*"  # . any character, * any character
+ZERO_OR_MORE_TXT = """Apple and banana are fruits"""
+MATCHES = re.findall(ZERO_OR_MORE_PATTERN, ZERO_OR_MORE_TXT)
+print(MATCHES)  # ['and banana are fruits']
