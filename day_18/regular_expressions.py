@@ -131,3 +131,22 @@ quantifier_txt = (
 quantifier_pattern = r"\d{1,4}"
 QUANTIFIER_MATCHES = re.findall(quantifier_pattern, quantifier_txt)
 print(QUANTIFIER_MATCHES)  # ['6', '2019', '8', '2021']
+
+# Cart ^ example
+CART_TXT = (
+    "This regular expression example was made on December 6,  2019 and revis"
+    "ed on July 8, 2021"
+)
+CART_PATTERN = r"^This"  # ^ means start of the string
+CART_MATCHES = re.findall(CART_PATTERN, CART_TXT)
+print(CART_MATCHES)  # ['This']
+
+# Cart negation example
+CART_NEGATION_TXT = (
+    "This regular expression example was made on December 6,"
+    "  2019 and revised on July 8, 2021"
+)
+# ^ in set character means negation, not A to Z, not a to z, no space
+CART_NEGATION_PATTERN = r"[^A-Za-z ]+"
+CART_NEGATION_MATCHES = re.findall(CART_NEGATION_PATTERN, CART_NEGATION_TXT)
+print(CART_NEGATION_MATCHES)  # ['6', '2019', '8', '2021']
