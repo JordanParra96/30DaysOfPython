@@ -114,3 +114,20 @@ Some people write it as email others may write it as Email or E-mail."""
 ZERO_PATTERN = r"[Ee]-?mail"  # ? means here that '-' is optional
 ZERO_MATCHES = re.findall(ZERO_PATTERN, ZERO_TXT)
 print(ZERO_MATCHES)  # ['e-mail', 'email', 'Email', 'E-mail']
+
+# Quantifier example
+quantifier_txt = (
+    "This regular expression example was made on December 6,"
+    "  2019 and revised on July 8, 2021"
+)
+quantifier_pattern = r"\d{4}"  # exactly four times
+QUANTIFIER_MATCHES = re.findall(quantifier_pattern, quantifier_txt)
+print(QUANTIFIER_MATCHES)  # ['2019', '2021']
+
+quantifier_txt = (
+    "This regular expression example was made on December 6,"
+    "  2019 and revised on July 8, 2021"
+)
+quantifier_pattern = r"\d{1,4}"
+QUANTIFIER_MATCHES = re.findall(quantifier_pattern, quantifier_txt)
+print(QUANTIFIER_MATCHES)  # ['6', '2019', '8', '2021']
