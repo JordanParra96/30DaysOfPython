@@ -107,3 +107,10 @@ ZERO_OR_MORE_PATTERN = r"[a].*"  # . any character, * any character
 ZERO_OR_MORE_TXT = """Apple and banana are fruits"""
 MATCHES = re.findall(ZERO_OR_MORE_PATTERN, ZERO_OR_MORE_TXT)
 print(MATCHES)  # ['and banana are fruits']
+
+# Zero or one time ? example
+ZERO_TXT = """I am not sure if there is a convention how to write the word e-mail.
+Some people write it as email others may write it as Email or E-mail."""
+ZERO_PATTERN = r"[Ee]-?mail"  # ? means here that '-' is optional
+ZERO_MATCHES = re.findall(ZERO_PATTERN, ZERO_TXT)
+print(ZERO_MATCHES)  # ['e-mail', 'email', 'Email', 'E-mail']
