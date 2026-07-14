@@ -150,3 +150,22 @@ CART_NEGATION_TXT = (
 CART_NEGATION_PATTERN = r"[^A-Za-z ]+"
 CART_NEGATION_MATCHES = re.findall(CART_NEGATION_PATTERN, CART_NEGATION_TXT)
 print(CART_NEGATION_MATCHES)  # ['6', '2019', '8', '2021']
+
+# Level 1 exercise
+
+PARAGRAPH = (
+    "I love teaching. If you do not love teaching what else can you love."
+    " I love Python if you do not love something which can give you all the capabilities"
+    " to develop an application what else can you love."
+)
+
+FRECUENCY_PATTERN = r"\b\w+\b"
+FRECUENCY_MATCHES = re.findall(FRECUENCY_PATTERN, PARAGRAPH)
+word_frequency = {}
+for word in FRECUENCY_MATCHES:
+    word_frequency[word] = word_frequency.get(word, 0) + 1
+most_frequent_word = max(word_frequency, key=word_frequency.get)
+print(
+    f"The most frequent word is '{most_frequent_word}' "
+    f"with a frequency of {word_frequency[most_frequent_word]}."
+)
