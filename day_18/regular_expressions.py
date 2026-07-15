@@ -174,3 +174,21 @@ print(
 points = ["-12", "-4", "-3", "-1", "0", "4", "8"]
 furthest_distance = int(max(points, key=int)) - int(min(points, key=int))
 print(f"The distance between the two furthest particles is {furthest_distance}.")
+
+# Level 2 exercise - write a pattern which identifies if a string is a valid python variable
+VARIABLE_PATTERN = r"^[a-zA-Z_][a-zA-Z0-9_]*$"
+
+
+def is_valid_variable(variable):
+    """Return True if `variable` is a valid Python variable name.
+
+    A valid variable starts with a letter (a-z, A-Z) or underscore, followed
+    by letters, digits or underscores.
+    """
+    return bool(re.match(VARIABLE_PATTERN, variable))
+
+
+print(is_valid_variable("first_name"))  # True
+print(is_valid_variable("first-name"))  # False
+print(is_valid_variable("1first_name"))  # False
+print(is_valid_variable("firstname"))  # True
