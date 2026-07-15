@@ -192,3 +192,35 @@ print(is_valid_variable("first_name"))  # True
 print(is_valid_variable("first-name"))  # False
 print(is_valid_variable("1first_name"))  # False
 print(is_valid_variable("firstname"))  # True
+
+# Level 3 exercise
+WRONG_SENTENCE = """%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;.
+ There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. 
+ ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s
+ mo@tivate yo@u to be a tea@cher!?"""
+result = re.sub(r"[^A-Za-z0-9. ]+", "", WRONG_SENTENCE)
+print(result)
+FREC_PATTERN = r"\b\w+\b"
+FREC_MATCHES = re.findall(FREC_PATTERN, result)
+word_frequency = {}
+for word in FREC_MATCHES:
+    word_frequency[word] = word_frequency.get(word, 0) + 1
+most_frequent_word = max(word_frequency, key=word_frequency.get)
+second_most_frequent_word = sorted(
+    word_frequency, key=word_frequency.get, reverse=True
+)[1]
+third_most_frequent_word = sorted(word_frequency, key=word_frequency.get, reverse=True)[
+    2
+]
+print(
+    f"The most frequent word is '{most_frequent_word}' "
+    f"with a frequency of {word_frequency[most_frequent_word]}."
+)
+print(
+    f"The second most frequent word is '{second_most_frequent_word}' "
+    f"with a frequency of {word_frequency[second_most_frequent_word]}."
+)
+print(
+    f"The third most frequent word is '{third_most_frequent_word}' "
+    f"with a frequency of {word_frequency[third_most_frequent_word]}."
+)
