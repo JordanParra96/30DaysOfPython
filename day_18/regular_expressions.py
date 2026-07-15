@@ -169,3 +169,8 @@ print(
     f"The most frequent word is '{most_frequent_word}' "
     f"with a frequency of {word_frequency[most_frequent_word]}."
 )
+
+# Level 1 exercise
+points = ["-12", "-4", "-3", "-1", "0", "4", "8"]
+furthest_distance = int(max(points, key=int)) - int(min(points, key=int))
+print(f"The distance between the two furthest particles is {furthest_distance}.")
