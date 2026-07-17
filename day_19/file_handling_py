@@ -1,0 +1,18 @@
+"""Day 19: 30 Days of python programming"""
+
+import json
+
+# Read, open and append files example (explicit encoding)
+with open("./files/reading_file_example.txt", "a", encoding="utf-8") as f:
+    f.write("This text has to be appended at the end")
+
+# Saving a JSON file example
+# python dictionary
+person = {
+    "name": "Asabeneh",
+    "country": "Finland",
+    "city": "Helsinki",
+    "skills": ["JavaScrip", "React", "Python"],
+}
+with open("./files/json_example.json", "w", encoding="utf-8") as f:
+    json.dump(person, f, ensure_ascii=False, indent=4)
