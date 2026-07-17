@@ -1,9 +1,13 @@
 """Day 19: 30 Days of python programming"""
 
 import json
+from pathlib import Path
+
+base_dir = Path(__file__).resolve().parent.parent
+data_dir = base_dir / "data"
 
 # Read, open and append files example (explicit encoding)
-with open("./files/reading_file_example.txt", "a", encoding="utf-8") as f:
+with open(data_dir / "reading_file_example.txt", "a", encoding="utf-8") as f:
     f.write("This text has to be appended at the end")
 
 # Saving a JSON file example
@@ -14,5 +18,32 @@ person = {
     "city": "Helsinki",
     "skills": ["JavaScrip", "React", "Python"],
 }
-with open("./files/json_example.json", "w", encoding="utf-8") as f:
+with open(data_dir / "json_example.json", "w", encoding="utf-8") as f:
     json.dump(person, f, ensure_ascii=False, indent=4)
+
+# Level 1
+with open(data_dir / "obama_speech.txt", "r", encoding="utf-8") as f:
+    obama_speech = f.read()
+    print(f"Obama Speech - Number of lines: {len(obama_speech.splitlines())}")
+    print(f"Obama Speech - Number of words: {len(obama_speech.split())}")
+
+with open(data_dir / "michelle_obama_speech.txt", "r", encoding="utf-8") as f:
+    michelle_obama_speech = f.read()
+    print(
+        f"Michelle Obama Speech - Number of lines: {len(michelle_obama_speech.splitlines())}"
+    )
+    print(
+        f"Michelle Obama Speech - Number of words: {len(michelle_obama_speech.split())}"
+    )
+
+with open(data_dir / "donald_speech.txt", "r", encoding="utf-8") as f:
+    donald_speech = f.read()
+    print(f"Donald Speech - Number of lines: {len(donald_speech.splitlines())}")
+    print(f"Donald Speech - Number of words: {len(donald_speech.split())}")
+
+with open(data_dir / "melina_trump_speech.txt", "r", encoding="utf-8") as f:
+    melina_trump_speech = f.read()
+    print(
+        f"Melina Trump Speech - Number of lines: {len(melina_trump_speech.splitlines())}"
+    )
+    print(f"Melina Trump Speech - Number of words: {len(melina_trump_speech.split())}")
