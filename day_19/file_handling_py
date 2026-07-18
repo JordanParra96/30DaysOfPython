@@ -50,7 +50,7 @@ with open(data_dir / "melina_trump_speech.txt", "r", encoding="utf-8") as f:
 
 
 # level 1 - Exercise 2
-def most_spoken_languages(filename="countries_data.json", n=10):
+def most_spoken_languages(filename, number_languages):
     """Returns the n most spoken languages."""
     with open(data_dir / filename, "r", encoding="utf-8") as file_handle:
         countries = json.load(file_handle)
@@ -58,7 +58,22 @@ def most_spoken_languages(filename="countries_data.json", n=10):
     for country in countries:
         for language in country.get("languages", []):
             language_count[language] = language_count.get(language, 0) + 1
-    return sorted(language_count.items(), key=lambda x: x[1], reverse=True)[:n]
+    return sorted(language_count.items(), key=lambda x: x[1], reverse=True)[
+        :number_languages
+    ]
 
 
-print("Most spoken languages:", most_spoken_languages())
+print("Most spoken languages:", most_spoken_languages("countries_data.json", 10))
+
+
+# level 1 - Exercise 3
+def most_populated_countries(filename, number_countries):
+    """Returns the n most populated countries."""
+    with open(data_dir / filename, "r", encoding="utf-8") as file_handle:
+        countries = json.load(file_handle)
+    return sorted(countries, key=lambda x: x.get("population", 0), reverse=True)[
+        :number_countries
+    ]
+
+
+print("Most populated countries:", most_populated_countries("countries_data.json", 3))
