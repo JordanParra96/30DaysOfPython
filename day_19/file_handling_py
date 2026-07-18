@@ -47,3 +47,18 @@ with open(data_dir / "melina_trump_speech.txt", "r", encoding="utf-8") as f:
         f"Melina Trump Speech - Number of lines: {len(melina_trump_speech.splitlines())}"
     )
     print(f"Melina Trump Speech - Number of words: {len(melina_trump_speech.split())}")
+
+
+# level 1 - Exercise 2
+def most_spoken_languages(filename="countries_data.json", n=10):
+    """Returns the n most spoken languages."""
+    with open(data_dir / filename, "r", encoding="utf-8") as file_handle:
+        countries = json.load(file_handle)
+    language_count = {}
+    for country in countries:
+        for language in country.get("languages", []):
+            language_count[language] = language_count.get(language, 0) + 1
+    return sorted(language_count.items(), key=lambda x: x[1], reverse=True)[:n]
+
+
+print("Most spoken languages:", most_spoken_languages())
