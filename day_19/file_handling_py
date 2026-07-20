@@ -77,3 +77,19 @@ def most_populated_countries(filename, number_countries):
 
 
 print("Most populated countries:", most_populated_countries("countries_data.json", 3))
+
+
+# Level 2 - Exercise 1
+def extract_email_addresses(filename):
+    """Extracts all incoming email addresses as a list from the email_exchange_big.txt file."""
+    with open(data_dir / filename, "r", encoding="utf-8") as file_handle:
+        email_data = file_handle.read()
+    email_addresses = []
+    for line in email_data.splitlines():
+        if "From:" in line:
+            email_address = line.split("From:")[1].strip()
+            email_addresses.append(email_address)
+    return email_addresses
+
+
+print("Extracted email addresses:", extract_email_addresses("email_exchanges_big.txt"))
