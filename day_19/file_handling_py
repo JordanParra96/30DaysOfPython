@@ -109,3 +109,17 @@ def find_most_common_words(filename, number_words):
 
 
 print("Most common words:", find_most_common_words("obama_speech.txt", 5))
+
+# Level 2 - Exercise 3
+print(
+    "Most common words in Michelle Obama's speech:",
+    find_most_common_words("michelle_obama_speech.txt", 10),
+)
+print(
+    "Most common words in Donald Trump's speech:",
+    find_most_common_words("donald_speech.txt", 10),
+)
+print(
+    "Most common words in Melina Trump's speech:",
+    find_most_common_words("melina_trump_speech.txt", 10),
+)
