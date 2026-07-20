@@ -93,3 +93,19 @@ def extract_email_addresses(filename):
 
 
 print("Extracted email addresses:", extract_email_addresses("email_exchanges_big.txt"))
+
+
+# Level 2 - Exercise 2
+def find_most_common_words(filename, number_words):
+    """Finds the most common words in a text file."""
+    with open(data_dir / filename, "r", encoding="utf-8") as file_handle:
+        text_data = file_handle.read()
+    word_count = {}
+    for word in text_data.split():
+        word = word.lower().strip(".,!?;:\"'()[]{}")
+        if word:
+            word_count[word] = word_count.get(word, 0) + 1
+    return sorted(word_count.items(), key=lambda x: x[1], reverse=True)[:number_words]
+
+
+print("Most common words:", find_most_common_words("obama_speech.txt", 5))
