@@ -123,3 +123,68 @@ print(
     "Most common words in Melina Trump's speech:",
     find_most_common_words("melina_trump_speech.txt", 10),
 )
+
+# Level 2 - Exercise 4
+
+with open(data_dir / "stop_words.py", "r", encoding="utf-8") as f:
+    stop_words_lines = f.readlines()
+
+stop_words = []
+for stop_words_line in stop_words_lines:
+    stop_words_line = stop_words_line.strip().strip(",")
+    is_quoted_word = stop_words_line.startswith('"') and stop_words_line.endswith('"')
+    is_docstring = stop_words_line.startswith('"""')
+    if is_quoted_word and not is_docstring:
+        stop_words.append(stop_words_line.strip('"'))
+
+
+def clean_text(text):
+    """Lowercases text and strips punctuation, returning a list of words."""
+    words = []
+    for word in text.split():
+        word = word.lower().strip(".,!?;:\"'()[]{}")
+        if word:
+            words.append(word)
+    return words
+
+
+def remove_support_words(words):
+    """Removes stop words from a list of words."""
+    return [word for word in words if word not in stop_words]
+
+
+def check_text_similarity(text_or_file_a, text_or_file_b):
+    """Checks the similarity between two texts.
+
+    Each argument can either be the name of a file in the data directory
+    or plain text. The similarity score is the number of unique words
+    shared by both texts divided by the total number of unique words
+    found across both texts, after cleaning and removing stop words.
+    """
+
+    def load_text(source):
+        path = data_dir / source
+        if path.is_file():
+            with open(path, "r", encoding="utf-8") as file_handle:
+                return file_handle.read()
+        return source
+
+    words_a = set(remove_support_words(clean_text(load_text(text_or_file_a))))
+    words_b = set(remove_support_words(clean_text(load_text(text_or_file_b))))
+
+    common_words = words_a & words_b
+    total_unique_words = words_a | words_b
+
+    if not total_unique_words:
+        return 0.0
+
+    return len(common_words) / len(total_unique_words)
+
+
+similarity_score = check_text_similarity(
+    "michelle_obama_speech.txt", "melina_trump_speech.txt"
+)
+print(
+    "Similarity between Michelle Obama's and Melina Trump's speeches: "
+    f"{similarity_score:.2%}"
+)
