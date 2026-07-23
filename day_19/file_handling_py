@@ -194,3 +194,34 @@ print(
     "Most repeated words in Romeo and Juliet:",
     find_most_common_words("romeo_and_juliet.txt", 10),
 )
+
+# Level 2 - Exercise 6
+def count_lines_with_keyword(filename, keyword, exclude_keyword=None):
+    """Counts lines containing keyword, case-insensitively.
+
+    If exclude_keyword is given, lines that also contain it are not counted
+    (used to count "Java" lines that are not "JavaScript" lines).
+    """
+    with open(data_dir / filename, "r", encoding="utf-8") as file_handle:
+        lines = file_handle.readlines()
+    count = 0
+    for line in lines:
+        line = line.lower()
+        if keyword.lower() in line:
+            if exclude_keyword is None or exclude_keyword.lower() not in line:
+                count += 1
+    return count
+
+
+python_lines = count_lines_with_keyword("hacker_news.csv", "python")
+javascript_lines = count_lines_with_keyword("hacker_news.csv", "javascript")
+java_not_javascript_lines = count_lines_with_keyword(
+    "hacker_news.csv", "java", exclude_keyword="javascript"
+)
+
+print(f"Lines containing 'python' or 'Python': {python_lines}")
+print(
+    "Lines containing 'JavaScript', 'javascript' or 'Javascript': "
+    f"{javascript_lines}"
+)
+print(f"Lines containing 'Java' and not 'JavaScript': {java_not_javascript_lines}")
