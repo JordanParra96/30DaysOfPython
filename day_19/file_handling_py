@@ -188,3 +188,9 @@ print(
     "Similarity between Michelle Obama's and Melina Trump's speeches: "
     f"{similarity_score:.2%}"
 )
+
+# Level 2 - Exercise 5
+print(
+    "Most repeated words in Romeo and Juliet:",
+    find_most_common_words("romeo_and_juliet.txt", 10),
+)
