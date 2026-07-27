@@ -92,3 +92,92 @@ word_frequency_in_book = count_word_frequency(words_in_book)
 top_10_words = get_most_common_words(word_frequency_in_book, 10)
 
 print(top_10_words)
+
+# Exercise 2
+CATS_API_URL = "https://api.thecatapi.com/v1/breeds"
+
+
+def get_cats(cats_url):
+    """Download the list of cat breeds from the given API url."""
+    cats_response = requests.get(cats_url, timeout=10)
+    return cats_response.json()
+
+
+def get_average_from_range(range_text):
+    """Turn a range like '3 - 5' into its average, e.g. 4.0."""
+    low, high = range_text.split("-")
+    return (float(low) + float(high)) / 2
+
+
+def get_weights(cats):
+    """Return the average metric weight (kg) of every cat breed."""
+    weights = []
+    for cat in cats:
+        weights.append(get_average_from_range(cat["weight"]["metric"]))
+    return weights
+
+
+def get_lifespans(cats):
+    """Return the average lifespan (years) of every cat breed."""
+    lifespans = []
+    for cat in cats:
+        lifespans.append(get_average_from_range(cat["life_span"]))
+    return lifespans
+
+
+def calculate_mean(values):
+    """Return the average of a list of numbers."""
+    return sum(values) / len(values)
+
+
+def calculate_median(values):
+    """Return the middle value of a list of numbers."""
+    sorted_values = sorted(values)
+    middle = len(sorted_values) // 2
+    if len(sorted_values) % 2 == 0:
+        return (sorted_values[middle - 1] + sorted_values[middle]) / 2
+    return sorted_values[middle]
+
+
+def calculate_standard_deviation(values):
+    """Return the population standard deviation of a list of numbers."""
+    mean = calculate_mean(values)
+    squared_differences = []
+    for value in values:
+        squared_differences.append((value - mean) ** 2)
+    variance = calculate_mean(squared_differences)
+    return variance**0.5
+
+
+def print_statistics(label, values):
+    """Print min, max, mean, median and standard deviation for a list of numbers."""
+    print(f"{label}:")
+    print(f"  min: {min(values):.2f}")
+    print(f"  max: {max(values):.2f}")
+    print(f"  mean: {calculate_mean(values):.2f}")
+    print(f"  median: {calculate_median(values):.2f}")
+    print(f"  standard deviation: {calculate_standard_deviation(values):.2f}")
+
+
+def build_frequency_table(items):
+    """Count how many times each item appears in a list."""
+    frequency_table = {}
+    for item in items:
+        if item in frequency_table:
+            frequency_table[item] += 1
+        else:
+            frequency_table[item] = 1
+    return frequency_table
+
+
+cat_breeds = get_cats(CATS_API_URL)
+
+cat_weights = get_weights(cat_breeds)
+cat_lifespans = get_lifespans(cat_breeds)
+print_statistics("Weight in kg", cat_weights)
+print_statistics("Lifespan in years", cat_lifespans)
+
+country_frequency = build_frequency_table([cat["origin"] for cat in cat_breeds])
+breed_frequency = build_frequency_table([cat["name"] for cat in cat_breeds])
+print("Country frequency:", country_frequency)
+print("Breed frequency:", breed_frequency)
