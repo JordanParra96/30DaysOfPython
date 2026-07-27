@@ -181,3 +181,60 @@ country_frequency = build_frequency_table([cat["origin"] for cat in cat_breeds])
 breed_frequency = build_frequency_table([cat["name"] for cat in cat_breeds])
 print("Country frequency:", country_frequency)
 print("Breed frequency:", breed_frequency)
+
+# Exercise 3
+COUNTRIES_API_URL = "https://www.apicountries.com/countries"
+
+
+def get_countries(countries_url):
+    """Download the list of countries from the given API url."""
+    countries_response = requests.get(countries_url, timeout=10)
+    return countries_response.json()
+
+
+def get_top_n(pairs, amount):
+    """Return the `amount` (label, value) pairs with the highest value, highest first."""
+    top_pairs = []
+    for _ in range(amount):
+        best_label = None
+        highest_value = 0
+        already_picked = [pair[0] for pair in top_pairs]
+        for label, value in pairs:
+            if label not in already_picked and value > highest_value:
+                best_label = label
+                highest_value = value
+        top_pairs.append((best_label, highest_value))
+    return top_pairs
+
+
+def get_country_areas(countries_list):
+    """Return (name, area) pairs for every country that has a known area."""
+    areas = []
+    for country in countries_list:
+        area = country.get("area")
+        if area is not None:
+            areas.append((country["name"], area))
+    return areas
+
+
+def get_all_language_names(countries_list):
+    """Return a flat list with every language spoken, one entry per country."""
+    language_names = []
+    for country in countries_list:
+        for language in country["languages"]:
+            language_names.append(language["name"])
+    return language_names
+
+
+all_countries = get_countries(COUNTRIES_API_URL)
+
+country_areas = get_country_areas(all_countries)
+ten_largest_countries = get_top_n(country_areas, 10)
+print("10 largest countries:", ten_largest_countries)
+
+all_language_names = get_all_language_names(all_countries)
+language_frequency = build_frequency_table(all_language_names)
+ten_most_spoken_languages = get_top_n(list(language_frequency.items()), 10)
+print("10 most spoken languages:", ten_most_spoken_languages)
+
+print("Total number of languages:", len(language_frequency))
