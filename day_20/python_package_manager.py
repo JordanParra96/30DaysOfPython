@@ -41,9 +41,9 @@ print(
 ROMEO_AND_JULIET_URL = "https://www.gutenberg.org/cache/epub/1112/pg1112.txt"
 
 
-def get_text_from_url(url):
+def get_text_from_url(book_url):
     """Download the text found at the given url."""
-    text_response = requests.get(url, timeout=10)
+    text_response = requests.get(book_url, timeout=10)
     return text_response.text
 
 
