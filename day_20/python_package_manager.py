@@ -207,20 +207,20 @@ def get_top_n(pairs, amount):
     return top_pairs
 
 
-def get_country_areas(countries):
+def get_country_areas(countries_list):
     """Return (name, area) pairs for every country that has a known area."""
-    country_areas = []
-    for country in countries:
+    areas = []
+    for country in countries_list:
         area = country.get("area")
         if area is not None:
-            country_areas.append((country["name"], area))
-    return country_areas
+            areas.append((country["name"], area))
+    return areas
 
 
-def get_all_language_names(countries):
+def get_all_language_names(countries_list):
     """Return a flat list with every language spoken, one entry per country."""
     language_names = []
-    for country in countries:
+    for country in countries_list:
         for language in country["languages"]:
             language_names.append(language["name"])
     return language_names
@@ -237,5 +237,4 @@ language_frequency = build_frequency_table(all_language_names)
 ten_most_spoken_languages = get_top_n(list(language_frequency.items()), 10)
 print("10 most spoken languages:", ten_most_spoken_languages)
 
-total_number_of_languages = len(language_frequency)
-print("Total number of languages:", total_number_of_languages)
+print("Total number of languages:", len(language_frequency))
