@@ -1,5 +1,9 @@
 """Day 21: 30 Days of python programming"""
 
+# These classes intentionally have few public methods; they build up
+# incrementally to illustrate class concepts one at a time.
+# pylint: disable=too-few-public-methods
+
 
 # Example of a class
 class Person:
@@ -155,6 +159,9 @@ print(s2.skills)
 class StudentWithGender(PersonWithSkills):
     """A class to represent a student with gender, inheriting from PersonWithSkills."""
 
+    # Extra "gender" argument on top of the inherited ones is intentional,
+    # to show overriding a parent method with additional state.
+    # pylint: disable-next=too-many-arguments,too-many-positional-arguments
     def __init__(
         self,
         firstname="Asabeneh",
