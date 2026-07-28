@@ -1,5 +1,7 @@
 """Day 21: 30 Days of python programming"""
 
+from collections import Counter
+
 # These classes intentionally have few public methods; they build up
 # incrementally to illustrate class concepts one at a time.
 # pylint: disable=too-few-public-methods
@@ -195,3 +197,129 @@ s2.add_skill("Organizing")
 s2.add_skill("Marketing")
 s2.add_skill("Digital Marketing")
 print(s2.skills)
+
+
+# Level 1, exercise 1
+class Statistics:
+    """A class to calculate central tendency and variability measures of a sample."""
+
+    def __init__(self, sample):
+        self.data = sample
+
+    def count(self):
+        """Return the number of items in the sample."""
+        return len(self.data)
+
+    def sum(self):
+        """Return the sum of the sample."""
+        return sum(self.data)
+
+    def min(self):
+        """Return the smallest value in the sample."""
+        return min(self.data)
+
+    def max(self):
+        """Return the largest value in the sample."""
+        return max(self.data)
+
+    def range(self):
+        """Return the difference between the largest and smallest values."""
+        return self.max() - self.min()
+
+    def mean(self):
+        """Return the average of the sample, rounded to the nearest integer."""
+        return round(self.sum() / self.count())
+
+    def median(self):
+        """Return the middle value of the sorted sample."""
+        sorted_data = sorted(self.data)
+        mid = self.count() // 2
+        if self.count() % 2 == 0:
+            return (sorted_data[mid - 1] + sorted_data[mid]) / 2
+        return sorted_data[mid]
+
+    def mode(self):
+        """Return the most frequent value and how many times it occurs."""
+        counts = Counter(self.data)
+        max_count = max(counts.values())
+        mode_value = next(
+            value for value, count in counts.items() if count == max_count
+        )
+        return {"mode": mode_value, "count": max_count}
+
+    def var(self):
+        """Return the population variance of the sample, rounded to 1 decimal."""
+        mean = self.sum() / self.count()
+        squared_diffs = sum((value - mean) ** 2 for value in self.data)
+        return round(squared_diffs / self.count(), 1)
+
+    def std(self):
+        """Return the population standard deviation, rounded to 1 decimal."""
+        return round(self.var() ** 0.5, 1)
+
+    def freq_dist(self):
+        """Return (percentage, value) pairs sorted by frequency, then value, descending."""
+        counts = Counter(self.data)
+        distribution = sorted(counts.items(), key=lambda item: (-item[1], -item[0]))
+        return [
+            (round(count / self.count() * 100, 2), value)
+            for value, count in distribution
+        ]
+
+    def describe(self):
+        """Return a summary of all the statistical measures."""
+        return (
+            f"Count: {self.count()}\n"
+            f"Sum: {self.sum()}\n"
+            f"Min: {self.min()}\n"
+            f"Max: {self.max()}\n"
+            f"Range: {self.range()}\n"
+            f"Mean: {self.mean()}\n"
+            f"Median: {self.median()}\n"
+            f"Mode: {self.mode()}\n"
+            f"Variance: {self.var()}\n"
+            f"Standard Deviation: {self.std()}\n"
+            f"Frequency Distribution: {self.freq_dist()}"
+        )
+
+
+ages = [
+    31,
+    26,
+    34,
+    37,
+    27,
+    26,
+    32,
+    32,
+    26,
+    27,
+    27,
+    24,
+    32,
+    33,
+    27,
+    25,
+    26,
+    38,
+    37,
+    31,
+    34,
+    24,
+    33,
+    29,
+    26,
+]
+data = Statistics(ages)
+print("Count:", data.count())
+print("Sum:", data.sum())
+print("Min:", data.min())
+print("Max:", data.max())
+print("Range:", data.range())
+print("Mean:", data.mean())
+print("Median:", data.median())
+print("Mode:", data.mode())
+print("Standard Deviation:", data.std())
+print("Variance:", data.var())
+print("Frequency Distribution:", data.freq_dist())
+print(data.describe())
