@@ -323,3 +323,45 @@ print("Standard Deviation:", data.std())
 print("Variance:", data.var())
 print("Frequency Distribution:", data.freq_dist())
 print(data.describe())
+
+
+# Level 2, exercise 1
+class PersonAccount:
+    """A class to represent a person's account with income and expenses."""
+
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.incomes = []
+        self.expenses = []
+
+    def add_income(self, amount, description=""):
+        """Add an income entry."""
+        self.incomes.append({"amount": amount, "description": description})
+
+    def add_expense(self, amount, description=""):
+        """Add an expense entry."""
+        self.expenses.append({"amount": amount, "description": description})
+
+    def total_income(self):
+        """Return the total income."""
+        return sum(income["amount"] for income in self.incomes)
+
+    def total_expense(self):
+        """Return the total expense."""
+        return sum(expense["amount"] for expense in self.expenses)
+
+    def account_balance(self):
+        """Return the account balance (total income - total expense)."""
+        return self.total_income() - self.total_expense()
+
+    def account_info(self):
+        """Return a summary of the account information."""
+        return {
+            "Name": f"{self.firstname} {self.lastname}",
+            "Total Income": self.total_income(),
+            "Total Expense": self.total_expense(),
+            "Account Balance": self.account_balance(),
+            "Incomes": self.incomes,
+            "Expenses": self.expenses,
+        }
