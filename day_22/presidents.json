@@ -1,0 +1,749 @@
+[
+  {
+    "No.": "1",
+    "Portrait": "Painting of George Washington",
+    "Name (birth–death)": "George Washington (1732–1799)",
+    "Term": "April 30, 1789 – March 4, 1797",
+    "Party": "Unaffiliated",
+    "Election": "1788–89",
+    "Vice President": "John Adams"
+  },
+  {
+    "No.": "1",
+    "Portrait": "Painting of George Washington",
+    "Name (birth–death)": "George Washington (1732–1799)",
+    "Term": "April 30, 1789 – March 4, 1797",
+    "Party": "Unaffiliated",
+    "Election": "1792",
+    "Vice President": "John Adams"
+  },
+  {
+    "No.": "2",
+    "Portrait": "Painting of John Adams",
+    "Name (birth–death)": "John Adams (1735–1826)",
+    "Term": "March 4, 1797 – March 4, 1801",
+    "Party": "Federalist",
+    "Election": "1796",
+    "Vice President": "Thomas Jefferson"
+  },
+  {
+    "No.": "3",
+    "Portrait": "Painting of Thomas Jefferson",
+    "Name (birth–death)": "Thomas Jefferson (1743–1826)",
+    "Term": "March 4, 1801 – March 4, 1809",
+    "Party": "Democratic- Republican",
+    "Election": "1800",
+    "Vice President": "Aaron Burr"
+  },
+  {
+    "No.": "3",
+    "Portrait": "Painting of Thomas Jefferson",
+    "Name (birth–death)": "Thomas Jefferson (1743–1826)",
+    "Term": "March 4, 1801 – March 4, 1809",
+    "Party": "Democratic- Republican",
+    "Election": "1804",
+    "Vice President": "George Clinton"
+  },
+  {
+    "No.": "4",
+    "Portrait": "Painting of James Madison",
+    "Name (birth–death)": "James Madison (1751–1836)",
+    "Term": "March 4, 1809 – March 4, 1817",
+    "Party": "Democratic- Republican",
+    "Election": "1808",
+    "Vice President": "George Clinton"
+  },
+  {
+    "No.": "4",
+    "Portrait": "Painting of James Madison",
+    "Name (birth–death)": "James Madison (1751–1836)",
+    "Term": "March 4, 1809 – March 4, 1817",
+    "Party": "Democratic- Republican",
+    "Election": "1808",
+    "Vice President": "Vacant after April 20, 1812"
+  },
+  {
+    "No.": "4",
+    "Portrait": "Painting of James Madison",
+    "Name (birth–death)": "James Madison (1751–1836)",
+    "Term": "March 4, 1809 – March 4, 1817",
+    "Party": "Democratic- Republican",
+    "Election": "1812",
+    "Vice President": "Elbridge Gerry"
+  },
+  {
+    "No.": "4",
+    "Portrait": "Painting of James Madison",
+    "Name (birth–death)": "James Madison (1751–1836)",
+    "Term": "March 4, 1809 – March 4, 1817",
+    "Party": "Democratic- Republican",
+    "Election": "1812",
+    "Vice President": "Vacant after November 23, 1814"
+  },
+  {
+    "No.": "5",
+    "Portrait": "Painting of James Monroe",
+    "Name (birth–death)": "James Monroe (1758–1831)",
+    "Term": "March 4, 1817 – March 4, 1825",
+    "Party": "Democratic- Republican",
+    "Election": "1816",
+    "Vice President": "Daniel D. Tompkins"
+  },
+  {
+    "No.": "5",
+    "Portrait": "Painting of James Monroe",
+    "Name (birth–death)": "James Monroe (1758–1831)",
+    "Term": "March 4, 1817 – March 4, 1825",
+    "Party": "Democratic- Republican",
+    "Election": "1820",
+    "Vice President": "Daniel D. Tompkins"
+  },
+  {
+    "No.": "6",
+    "Portrait": "Painting of John Quincy Adams",
+    "Name (birth–death)": "John Quincy Adams (1767–1848)",
+    "Term": "March 4, 1825 – March 4, 1829",
+    "Party": "Democratic- Republican",
+    "Election": "1824",
+    "Vice President": "John C. Calhoun"
+  },
+  {
+    "No.": "6",
+    "Portrait": "Painting of John Quincy Adams",
+    "Name (birth–death)": "John Quincy Adams (1767–1848)",
+    "Term": "March 4, 1825 – March 4, 1829",
+    "Party": "National Republican",
+    "Election": "1824",
+    "Vice President": "John C. Calhoun"
+  },
+  {
+    "No.": "7",
+    "Portrait": "Painting of Andrew Jackson",
+    "Name (birth–death)": "Andrew Jackson (1767–1845)",
+    "Term": "March 4, 1829 – March 4, 1837",
+    "Party": "Democratic",
+    "Election": "1828",
+    "Vice President": "John C. Calhoun"
+  },
+  {
+    "No.": "7",
+    "Portrait": "Painting of Andrew Jackson",
+    "Name (birth–death)": "Andrew Jackson (1767–1845)",
+    "Term": "March 4, 1829 – March 4, 1837",
+    "Party": "Democratic",
+    "Election": "1828",
+    "Vice President": "Vacant after December 28, 1832"
+  },
+  {
+    "No.": "7",
+    "Portrait": "Painting of Andrew Jackson",
+    "Name (birth–death)": "Andrew Jackson (1767–1845)",
+    "Term": "March 4, 1829 – March 4, 1837",
+    "Party": "Democratic",
+    "Election": "1832",
+    "Vice President": "Martin Van Buren"
+  },
+  {
+    "No.": "8",
+    "Portrait": "",
+    "Name (birth–death)": "Martin Van Buren (1782–1862)",
+    "Term": "March 4, 1837 – March 4, 1841",
+    "Party": "Democratic",
+    "Election": "1836",
+    "Vice President": "Richard Mentor Johnson"
+  },
+  {
+    "No.": "9",
+    "Portrait": "",
+    "Name (birth–death)": "William Henry Harrison (1773–1841)",
+    "Term": "March 4, 1841 – April 4, 1841",
+    "Party": "Whig",
+    "Election": "1840",
+    "Vice President": "John Tyler"
+  },
+  {
+    "No.": "10",
+    "Portrait": "",
+    "Name (birth–death)": "John Tyler (1790–1862)",
+    "Term": "April 4, 1841 – March 4, 1845",
+    "Party": "Whig",
+    "Election": "–",
+    "Vice President": "Vacant throughout presidency"
+  },
+  {
+    "No.": "10",
+    "Portrait": "",
+    "Name (birth–death)": "John Tyler (1790–1862)",
+    "Term": "April 4, 1841 – March 4, 1845",
+    "Party": "Unaffiliated",
+    "Election": "–",
+    "Vice President": "Vacant throughout presidency"
+  },
+  {
+    "No.": "11",
+    "Portrait": "Black-and-white photographic portrait of James K. Polk",
+    "Name (birth–death)": "James K. Polk (1795–1849)",
+    "Term": "March 4, 1845 – March 4, 1849",
+    "Party": "Democratic",
+    "Election": "1844",
+    "Vice President": "George M. Dallas"
+  },
+  {
+    "No.": "12",
+    "Portrait": "Black-and-white photographic portrait of Zachary Taylor",
+    "Name (birth–death)": "Zachary Taylor (1784–1850)",
+    "Term": "March 4, 1849 – July 9, 1850",
+    "Party": "Whig",
+    "Election": "1848",
+    "Vice President": "Millard Fillmore"
+  },
+  {
+    "No.": "13",
+    "Portrait": "Black-and-white photographic portrait of Millard Fillmore",
+    "Name (birth–death)": "Millard Fillmore (1800–1874)",
+    "Term": "July 9, 1850 – March 4, 1853",
+    "Party": "Whig",
+    "Election": "–",
+    "Vice President": "Vacant throughout presidency"
+  },
+  {
+    "No.": "14",
+    "Portrait": "Black-and-white photographic portrait of Franklin Pierce",
+    "Name (birth–death)": "Franklin Pierce (1804–1869)",
+    "Term": "March 4, 1853 – March 4, 1857",
+    "Party": "Democratic",
+    "Election": "1852",
+    "Vice President": "William R. King"
+  },
+  {
+    "No.": "14",
+    "Portrait": "Black-and-white photographic portrait of Franklin Pierce",
+    "Name (birth–death)": "Franklin Pierce (1804–1869)",
+    "Term": "March 4, 1853 – March 4, 1857",
+    "Party": "Democratic",
+    "Election": "1852",
+    "Vice President": "Vacant after April 18, 1853"
+  },
+  {
+    "No.": "15",
+    "Portrait": "Black-and-white photographic portrait of James Buchanan",
+    "Name (birth–death)": "James Buchanan (1791–1868)",
+    "Term": "March 4, 1857 – March 4, 1861",
+    "Party": "Democratic",
+    "Election": "1856",
+    "Vice President": "John C. Breckinridge"
+  },
+  {
+    "No.": "16",
+    "Portrait": "Black-and-white photographic portrait of Abraham Lincoln",
+    "Name (birth–death)": "Abraham Lincoln (1809–1865)",
+    "Term": "March 4, 1861 – April 15, 1865",
+    "Party": "Republican",
+    "Election": "1860",
+    "Vice President": "Hannibal Hamlin"
+  },
+  {
+    "No.": "16",
+    "Portrait": "Black-and-white photographic portrait of Abraham Lincoln",
+    "Name (birth–death)": "Abraham Lincoln (1809–1865)",
+    "Term": "March 4, 1861 – April 15, 1865",
+    "Party": "National Union",
+    "Election": "1864",
+    "Vice President": "Andrew Johnson"
+  },
+  {
+    "No.": "17",
+    "Portrait": "Black-and-white photographic portrait of Andrew Johnson",
+    "Name (birth–death)": "Andrew Johnson (1808–1875)",
+    "Term": "April 15, 1865 – March 4, 1869",
+    "Party": "National Union",
+    "Election": "–",
+    "Vice President": "Vacant throughout presidency"
+  },
+  {
+    "No.": "17",
+    "Portrait": "Black-and-white photographic portrait of Andrew Johnson",
+    "Name (birth–death)": "Andrew Johnson (1808–1875)",
+    "Term": "April 15, 1865 – March 4, 1869",
+    "Party": "Democratic",
+    "Election": "–",
+    "Vice President": "Vacant throughout presidency"
+  },
+  {
+    "No.": "18",
+    "Portrait": "Black-and-white photographic portrait of Ulysses S. Grant",
+    "Name (birth–death)": "Ulysses S. Grant (1822–1885)",
+    "Term": "March 4, 1869 – March 4, 1877",
+    "Party": "Republican",
+    "Election": "1868",
+    "Vice President": "Schuyler Colfax"
+  },
+  {
+    "No.": "18",
+    "Portrait": "Black-and-white photographic portrait of Ulysses S. Grant",
+    "Name (birth–death)": "Ulysses S. Grant (1822–1885)",
+    "Term": "March 4, 1869 – March 4, 1877",
+    "Party": "Republican",
+    "Election": "1872",
+    "Vice President": "Henry Wilson"
+  },
+  {
+    "No.": "18",
+    "Portrait": "Black-and-white photographic portrait of Ulysses S. Grant",
+    "Name (birth–death)": "Ulysses S. Grant (1822–1885)",
+    "Term": "March 4, 1869 – March 4, 1877",
+    "Party": "Republican",
+    "Election": "1872",
+    "Vice President": "Vacant after November 22, 1875"
+  },
+  {
+    "No.": "19",
+    "Portrait": "Black-and-white photographic portrait of Rutherford B. Hayes",
+    "Name (birth–death)": "Rutherford B. Hayes (1822–1893)",
+    "Term": "March 4, 1877 – March 4, 1881",
+    "Party": "Republican",
+    "Election": "1876",
+    "Vice President": "William A. Wheeler"
+  },
+  {
+    "No.": "20",
+    "Portrait": "Black-and-white photographic portrait of James A. Garfield",
+    "Name (birth–death)": "James A. Garfield (1831–1881)",
+    "Term": "March 4, 1881 – September 19, 1881",
+    "Party": "Republican",
+    "Election": "1880",
+    "Vice President": "Chester A. Arthur"
+  },
+  {
+    "No.": "21",
+    "Portrait": "Sepia photographic portrait of Chester A. Arthur",
+    "Name (birth–death)": "Chester A. Arthur (1829–1886)",
+    "Term": "September 19, 1881 – March 4, 1885",
+    "Party": "Republican",
+    "Election": "–",
+    "Vice President": "Vacant throughout presidency"
+  },
+  {
+    "No.": "22",
+    "Portrait": "",
+    "Name (birth–death)": "Grover Cleveland (1837–1908) 1st term",
+    "Term": "March 4, 1885 – March 4, 1889",
+    "Party": "Democratic",
+    "Election": "1884",
+    "Vice President": "Thomas A. Hendricks"
+  },
+  {
+    "No.": "22",
+    "Portrait": "",
+    "Name (birth–death)": "Grover Cleveland (1837–1908) 1st term",
+    "Term": "March 4, 1885 – March 4, 1889",
+    "Party": "Democratic",
+    "Election": "1884",
+    "Vice President": "Vacant after November 25, 1885"
+  },
+  {
+    "No.": "23",
+    "Portrait": "Black-and-white photographic portrait of Benjamin Harrison",
+    "Name (birth–death)": "Benjamin Harrison (1833–1901)",
+    "Term": "March 4, 1889 – March 4, 1893",
+    "Party": "Republican",
+    "Election": "1888",
+    "Vice President": "Levi P. Morton"
+  },
+  {
+    "No.": "24",
+    "Portrait": "Black-and-white photographic portrait of Grover Cleveland",
+    "Name (birth–death)": "Grover Cleveland (1837–1908) 2nd term",
+    "Term": "March 4, 1893 – March 4, 1897",
+    "Party": "Democratic",
+    "Election": "1892",
+    "Vice President": "Adlai Stevenson I"
+  },
+  {
+    "No.": "25",
+    "Portrait": "Black-and-white photographic portrait of William McKinley",
+    "Name (birth–death)": "William McKinley (1843–1901)",
+    "Term": "March 4, 1897 – September 14, 1901",
+    "Party": "Republican",
+    "Election": "1896",
+    "Vice President": "Garret Hobart"
+  },
+  {
+    "No.": "25",
+    "Portrait": "Black-and-white photographic portrait of William McKinley",
+    "Name (birth–death)": "William McKinley (1843–1901)",
+    "Term": "March 4, 1897 – September 14, 1901",
+    "Party": "Republican",
+    "Election": "1896",
+    "Vice President": "Vacant after November 21, 1899"
+  },
+  {
+    "No.": "25",
+    "Portrait": "Black-and-white photographic portrait of William McKinley",
+    "Name (birth–death)": "William McKinley (1843–1901)",
+    "Term": "March 4, 1897 – September 14, 1901",
+    "Party": "Republican",
+    "Election": "1900",
+    "Vice President": "Theodore Roosevelt"
+  },
+  {
+    "No.": "26",
+    "Portrait": "Photographic portrait of Theodore Roosevelt",
+    "Name (birth–death)": "Theodore Roosevelt (1858–1919)",
+    "Term": "September 14, 1901 – March 4, 1909",
+    "Party": "Republican",
+    "Election": "–",
+    "Vice President": "Vacant through March 4, 1905"
+  },
+  {
+    "No.": "26",
+    "Portrait": "Photographic portrait of Theodore Roosevelt",
+    "Name (birth–death)": "Theodore Roosevelt (1858–1919)",
+    "Term": "September 14, 1901 – March 4, 1909",
+    "Party": "Republican",
+    "Election": "1904",
+    "Vice President": "Charles W. Fairbanks"
+  },
+  {
+    "No.": "27",
+    "Portrait": "Black-and-white photographic portrait of William Howard Taft",
+    "Name (birth–death)": "William Howard Taft (1857–1930)",
+    "Term": "March 4, 1909 – March 4, 1913",
+    "Party": "Republican",
+    "Election": "1908",
+    "Vice President": "James S. Sherman"
+  },
+  {
+    "No.": "27",
+    "Portrait": "Black-and-white photographic portrait of William Howard Taft",
+    "Name (birth–death)": "William Howard Taft (1857–1930)",
+    "Term": "March 4, 1909 – March 4, 1913",
+    "Party": "Republican",
+    "Election": "1908",
+    "Vice President": "Vacant after October 30, 1912"
+  },
+  {
+    "No.": "28",
+    "Portrait": "",
+    "Name (birth–death)": "Woodrow Wilson (1856–1924)",
+    "Term": "March 4, 1913 – March 4, 1921",
+    "Party": "Democratic",
+    "Election": "1912",
+    "Vice President": "Thomas R. Marshall"
+  },
+  {
+    "No.": "28",
+    "Portrait": "",
+    "Name (birth–death)": "Woodrow Wilson (1856–1924)",
+    "Term": "March 4, 1913 – March 4, 1921",
+    "Party": "Democratic",
+    "Election": "1916",
+    "Vice President": "Thomas R. Marshall"
+  },
+  {
+    "No.": "29",
+    "Portrait": "Black-and-white photographic portrait of Warren G. Harding",
+    "Name (birth–death)": "Warren G. Harding (1865–1923)",
+    "Term": "March 4, 1921 – August 2, 1923",
+    "Party": "Republican",
+    "Election": "1920",
+    "Vice President": "Calvin Coolidge"
+  },
+  {
+    "No.": "30",
+    "Portrait": "Black-and-white photographic portrait of Calvin Coolidge",
+    "Name (birth–death)": "Calvin Coolidge (1872–1933)",
+    "Term": "August 2, 1923 – March 4, 1929",
+    "Party": "Republican",
+    "Election": "–",
+    "Vice President": "Vacant through March 4, 1925"
+  },
+  {
+    "No.": "30",
+    "Portrait": "Black-and-white photographic portrait of Calvin Coolidge",
+    "Name (birth–death)": "Calvin Coolidge (1872–1933)",
+    "Term": "August 2, 1923 – March 4, 1929",
+    "Party": "Republican",
+    "Election": "1924",
+    "Vice President": "Charles G. Dawes"
+  },
+  {
+    "No.": "31",
+    "Portrait": "Black-and-white photographic portrait of Herbert Hoover",
+    "Name (birth–death)": "Herbert Hoover (1874–1964)",
+    "Term": "March 4, 1929 – March 4, 1933",
+    "Party": "Republican",
+    "Election": "1928",
+    "Vice President": "Charles Curtis"
+  },
+  {
+    "No.": "32",
+    "Portrait": "Photographic portrait of Franklin D. Roosevelt",
+    "Name (birth–death)": "Franklin D. Roosevelt (1882–1945)",
+    "Term": "March 4, 1933 – April 12, 1945",
+    "Party": "Democratic",
+    "Election": "1932",
+    "Vice President": "John Nance Garner"
+  },
+  {
+    "No.": "32",
+    "Portrait": "Photographic portrait of Franklin D. Roosevelt",
+    "Name (birth–death)": "Franklin D. Roosevelt (1882–1945)",
+    "Term": "March 4, 1933 – April 12, 1945",
+    "Party": "Democratic",
+    "Election": "1936",
+    "Vice President": "John Nance Garner"
+  },
+  {
+    "No.": "32",
+    "Portrait": "Photographic portrait of Franklin D. Roosevelt",
+    "Name (birth–death)": "Franklin D. Roosevelt (1882–1945)",
+    "Term": "March 4, 1933 – April 12, 1945",
+    "Party": "Democratic",
+    "Election": "1940",
+    "Vice President": "Henry A. Wallace"
+  },
+  {
+    "No.": "32",
+    "Portrait": "Photographic portrait of Franklin D. Roosevelt",
+    "Name (birth–death)": "Franklin D. Roosevelt (1882–1945)",
+    "Term": "March 4, 1933 – April 12, 1945",
+    "Party": "Democratic",
+    "Election": "1944",
+    "Vice President": "Harry S. Truman"
+  },
+  {
+    "No.": "33",
+    "Portrait": "Photographic portrait of Harry S. Truman",
+    "Name (birth–death)": "Harry S. Truman (1884–1972)",
+    "Term": "April 12, 1945 – January 20, 1953",
+    "Party": "Democratic",
+    "Election": "–",
+    "Vice President": "Vacant through January 20, 1949"
+  },
+  {
+    "No.": "33",
+    "Portrait": "Photographic portrait of Harry S. Truman",
+    "Name (birth–death)": "Harry S. Truman (1884–1972)",
+    "Term": "April 12, 1945 – January 20, 1953",
+    "Party": "Democratic",
+    "Election": "1948",
+    "Vice President": "Alben W. Barkley"
+  },
+  {
+    "No.": "34",
+    "Portrait": "Photographic portrait of Dwight D. Eisenhower",
+    "Name (birth–death)": "Dwight D. Eisenhower (1890–1969)",
+    "Term": "January 20, 1953 – January 20, 1961",
+    "Party": "Republican",
+    "Election": "1952",
+    "Vice President": "Richard Nixon"
+  },
+  {
+    "No.": "34",
+    "Portrait": "Photographic portrait of Dwight D. Eisenhower",
+    "Name (birth–death)": "Dwight D. Eisenhower (1890–1969)",
+    "Term": "January 20, 1953 – January 20, 1961",
+    "Party": "Republican",
+    "Election": "1956",
+    "Vice President": "Richard Nixon"
+  },
+  {
+    "No.": "35",
+    "Portrait": "Photographic portrait of John F. Kennedy",
+    "Name (birth–death)": "John F. Kennedy (1917–1963)",
+    "Term": "January 20, 1961 – November 22, 1963",
+    "Party": "Democratic",
+    "Election": "1960",
+    "Vice President": "Lyndon B. Johnson"
+  },
+  {
+    "No.": "36",
+    "Portrait": "Photographic portrait of Lyndon B. Johnson",
+    "Name (birth–death)": "Lyndon B. Johnson (1908–1973)",
+    "Term": "November 22, 1963 – January 20, 1969",
+    "Party": "Democratic",
+    "Election": "–",
+    "Vice President": "Vacant through January 20, 1965"
+  },
+  {
+    "No.": "36",
+    "Portrait": "Photographic portrait of Lyndon B. Johnson",
+    "Name (birth–death)": "Lyndon B. Johnson (1908–1973)",
+    "Term": "November 22, 1963 – January 20, 1969",
+    "Party": "Democratic",
+    "Election": "1964",
+    "Vice President": "Hubert Humphrey"
+  },
+  {
+    "No.": "37",
+    "Portrait": "Photographic portrait of Richard Nixon",
+    "Name (birth–death)": "Richard Nixon (1913–1994)",
+    "Term": "January 20, 1969 – August 9, 1974",
+    "Party": "Republican",
+    "Election": "1968",
+    "Vice President": "Spiro Agnew"
+  },
+  {
+    "No.": "37",
+    "Portrait": "Photographic portrait of Richard Nixon",
+    "Name (birth–death)": "Richard Nixon (1913–1994)",
+    "Term": "January 20, 1969 – August 9, 1974",
+    "Party": "Republican",
+    "Election": "1972",
+    "Vice President": "Spiro Agnew"
+  },
+  {
+    "No.": "37",
+    "Portrait": "Photographic portrait of Richard Nixon",
+    "Name (birth–death)": "Richard Nixon (1913–1994)",
+    "Term": "January 20, 1969 – August 9, 1974",
+    "Party": "Republican",
+    "Election": "1972",
+    "Vice President": "Vacant: October 10 – December 6, 1973"
+  },
+  {
+    "No.": "37",
+    "Portrait": "Photographic portrait of Richard Nixon",
+    "Name (birth–death)": "Richard Nixon (1913–1994)",
+    "Term": "January 20, 1969 – August 9, 1974",
+    "Party": "Republican",
+    "Election": "1972",
+    "Vice President": "Gerald Ford"
+  },
+  {
+    "No.": "38",
+    "Portrait": "Photographic portrait of Gerald Ford",
+    "Name (birth–death)": "Gerald Ford (1913–2006)",
+    "Term": "August 9, 1974 – January 20, 1977",
+    "Party": "Republican",
+    "Election": "–",
+    "Vice President": "Vacant through December 19, 1974"
+  },
+  {
+    "No.": "38",
+    "Portrait": "Photographic portrait of Gerald Ford",
+    "Name (birth–death)": "Gerald Ford (1913–2006)",
+    "Term": "August 9, 1974 – January 20, 1977",
+    "Party": "Republican",
+    "Election": "–",
+    "Vice President": "Nelson Rockefeller"
+  },
+  {
+    "No.": "39",
+    "Portrait": "Photographic portrait of Jimmy Carter",
+    "Name (birth–death)": "Jimmy Carter (1924–2024)",
+    "Term": "January 20, 1977 – January 20, 1981",
+    "Party": "Democratic",
+    "Election": "1976",
+    "Vice President": "Walter Mondale"
+  },
+  {
+    "No.": "40",
+    "Portrait": "Photographic portrait of Ronald Reagan",
+    "Name (birth–death)": "Ronald Reagan (1911–2004)",
+    "Term": "January 20, 1981 – January 20, 1989",
+    "Party": "Republican",
+    "Election": "1980",
+    "Vice President": "George H. W. Bush"
+  },
+  {
+    "No.": "40",
+    "Portrait": "Photographic portrait of Ronald Reagan",
+    "Name (birth–death)": "Ronald Reagan (1911–2004)",
+    "Term": "January 20, 1981 – January 20, 1989",
+    "Party": "Republican",
+    "Election": "1984",
+    "Vice President": "George H. W. Bush"
+  },
+  {
+    "No.": "41",
+    "Portrait": "Photographic portrait of George H. W. Bush",
+    "Name (birth–death)": "George H. W. Bush (1924–2018)",
+    "Term": "January 20, 1989 – January 20, 1993",
+    "Party": "Republican",
+    "Election": "1988",
+    "Vice President": "Dan Quayle"
+  },
+  {
+    "No.": "42",
+    "Portrait": "Photographic portrait of Bill Clinton",
+    "Name (birth–death)": "Bill Clinton ( b. 1946)",
+    "Term": "January 20, 1993 – January 20, 2001",
+    "Party": "Democratic",
+    "Election": "1992",
+    "Vice President": "Al Gore"
+  },
+  {
+    "No.": "42",
+    "Portrait": "Photographic portrait of Bill Clinton",
+    "Name (birth–death)": "Bill Clinton ( b. 1946)",
+    "Term": "January 20, 1993 – January 20, 2001",
+    "Party": "Democratic",
+    "Election": "1996",
+    "Vice President": "Al Gore"
+  },
+  {
+    "No.": "43",
+    "Portrait": "Photographic portrait of George W. Bush",
+    "Name (birth–death)": "George W. Bush ( b. 1946)",
+    "Term": "January 20, 2001 – January 20, 2009",
+    "Party": "Republican",
+    "Election": "2000",
+    "Vice President": "Dick Cheney"
+  },
+  {
+    "No.": "43",
+    "Portrait": "Photographic portrait of George W. Bush",
+    "Name (birth–death)": "George W. Bush ( b. 1946)",
+    "Term": "January 20, 2001 – January 20, 2009",
+    "Party": "Republican",
+    "Election": "2004",
+    "Vice President": "Dick Cheney"
+  },
+  {
+    "No.": "44",
+    "Portrait": "Photographic portrait of Barack Obama",
+    "Name (birth–death)": "Barack Obama ( b. 1961)",
+    "Term": "January 20, 2009 – January 20, 2017",
+    "Party": "Democratic",
+    "Election": "2008",
+    "Vice President": "Joe Biden"
+  },
+  {
+    "No.": "44",
+    "Portrait": "Photographic portrait of Barack Obama",
+    "Name (birth–death)": "Barack Obama ( b. 1961)",
+    "Term": "January 20, 2009 – January 20, 2017",
+    "Party": "Democratic",
+    "Election": "2012",
+    "Vice President": "Joe Biden"
+  },
+  {
+    "No.": "45",
+    "Portrait": "Photographic portrait of Donald Trump",
+    "Name (birth–death)": "Donald Trump ( b. 1946) 1st term",
+    "Term": "January 20, 2017 – January 20, 2021",
+    "Party": "Republican",
+    "Election": "2016",
+    "Vice President": "Mike Pence"
+  },
+  {
+    "No.": "46",
+    "Portrait": "Photographic portrait of Joe Biden",
+    "Name (birth–death)": "Joe Biden ( b. 1942)",
+    "Term": "January 20, 2021 – January 20, 2025",
+    "Party": "Democratic",
+    "Election": "2020",
+    "Vice President": "Kamala Harris"
+  },
+  {
+    "No.": "47",
+    "Portrait": "Photographic portrait of Donald Trump",
+    "Name (birth–death)": "Donald Trump ( b. 1946) 2nd term",
+    "Term": "January 20, 2025 – Incumbent",
+    "Party": "Republican",
+    "Election": "2024",
+    "Vice President": "JD Vance"
+  }
+]
