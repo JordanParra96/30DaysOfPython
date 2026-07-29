@@ -74,3 +74,39 @@ with open(json_path, "w", encoding="utf-8") as json_file:
     json.dump(facts_and_stats, json_file, indent=2, ensure_ascii=False)
 
 print(json.dumps(facts_and_stats, indent=2, ensure_ascii=False))
+
+# Exercise 2
+
+
+def scrape_uci_datasets_table(page_url):
+    """Scrape the UCI ML Repository datasets table and return a list of dataset records."""
+    page = requests.get(page_url, timeout=10)
+    datasets_soup = BeautifulSoup(page.content, "html.parser")
+
+    header_row = datasets_soup.find("tr", attrs={"bgcolor": "#003366"})
+    dataset_table = header_row.find_parent("table")
+    rows = dataset_table.find_all("tr", recursive=False)
+    headers = [cell.get_text(strip=True) for cell in rows[0].find_all("td")]
+
+    datasets = []
+    for row in rows[1:]:
+        cells = row.find_all("td", recursive=False)
+        name = cells[0].find("b").get_text(strip=True)
+        values = [name] + [cell.get_text(strip=True) for cell in cells[1:]]
+        datasets.append(dict(zip(headers, values)))
+
+    return datasets
+
+
+uci_datasets = scrape_uci_datasets_table(
+    "http://web.archive.org/web/20210506224749/"
+    "http://archive.ics.uci.edu/ml/datasets.php"
+    "?format=&task=reg&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table"
+)
+
+uci_json_path = Path(__file__).parent / "uci_datasets.json"
+with open(uci_json_path, "w", encoding="utf-8") as json_file:
+    json.dump(uci_datasets, json_file, indent=2, ensure_ascii=False)
+
+print(f"Scraped {len(uci_datasets)} datasets")
+print(json.dumps(uci_datasets[:3], indent=2, ensure_ascii=False))
