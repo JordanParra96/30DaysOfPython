@@ -110,3 +110,91 @@ with open(uci_json_path, "w", encoding="utf-8") as json_file:
 
 print(f"Scraped {len(uci_datasets)} datasets")
 print(json.dumps(uci_datasets[:3], indent=2, ensure_ascii=False))
+
+# Exercise 3
+
+
+def get_cell_text(cell):
+    """Return a table cell's text, stripped of footnote markers, using
+    an image's alt text when the cell only contains a portrait."""
+    for footnote in cell.find_all("sup"):
+        footnote.decompose()
+    image = cell.find("img")
+    if image and image.get("alt"):
+        return image["alt"].strip()
+    return cell.get_text(" ", strip=True)
+
+
+def get_table_headers(header_row):
+    """Expand header cells by their colspan so they line up with data columns."""
+    headers = []
+    for header_cell in header_row.find_all("th"):
+        for footnote in header_cell.find_all("sup"):
+            footnote.decompose()
+        label = header_cell.get_text(" ", strip=True)
+        headers.extend([label] * int(header_cell.get("colspan", 1)))
+    return headers
+
+
+def flatten_row(row, num_cols, pending):
+    """Fill in a table row's values, resolving rowspans carried from previous rows."""
+    cells = iter(row.find_all(["td", "th"]))
+    current_cell = next(cells, None)
+    values = [None] * num_cols
+    col = 0
+    while col < num_cols:
+        if col in pending:
+            remaining, text = pending[col]
+            values[col] = text
+            pending[col] = [remaining - 1, text]
+            if pending[col][0] == 0:
+                del pending[col]
+            col += 1
+            continue
+        if current_cell is None:
+            break
+        text = get_cell_text(current_cell)
+        colspan = int(current_cell.get("colspan", 1))
+        rowspan = int(current_cell.get("rowspan", 1))
+        for offset in range(colspan):
+            values[col + offset] = text
+            if rowspan > 1:
+                pending[col + offset] = [rowspan - 1, text]
+        col += colspan
+        current_cell = next(cells, None)
+    return values
+
+
+def scrape_presidents_table(page_url):
+    """Scrape the Wikipedia presidents table into a list of records, one per
+    election term, resolving rowspans/colspans by carrying cells forward."""
+    # Wikimedia's robot policy rejects requests without an identifying User-Agent.
+    request_headers = {
+        "User-Agent": "30DaysOfPython-exercise/1.0 (https://github.com/JordanParra96)"
+    }
+    page = requests.get(page_url, headers=request_headers, timeout=10)
+    presidents_soup = BeautifulSoup(page.content, "html.parser")
+    presidents_table = presidents_soup.find("table", class_="wikitable")
+
+    rows = presidents_table.find_all("tr")
+    column_headers = get_table_headers(rows[0])
+
+    pending = {}  # column index -> [rows remaining, carried-over text]
+    presidents = []
+    for row in rows[1:]:
+        values = flatten_row(row, len(column_headers), pending)
+        presidents.append(dict(zip(column_headers, values)))
+
+    return presidents
+
+
+presidents_data = scrape_presidents_table(
+    "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States"
+)
+
+presidents_json_path = Path(__file__).parent / "presidents.json"
+with open(presidents_json_path, "w", encoding="utf-8") as json_file:
+    json.dump(presidents_data, json_file, indent=2, ensure_ascii=False)
+
+print(f"Scraped {len(presidents_data)} president terms")
+print(json.dumps(presidents_data[:2], indent=2, ensure_ascii=False))
